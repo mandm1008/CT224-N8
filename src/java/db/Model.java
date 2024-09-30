@@ -1,0 +1,98 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package db;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.function.Consumer;
+
+/**
+ *
+ * @author ASUS
+ */
+
+public abstract class Model {
+  protected abstract String getInsertString();
+
+  protected abstract String getTableName();
+
+  protected abstract String getIdName();
+
+  protected abstract int getId();
+
+  protected abstract void setValueInsert(PreparedStatement pstmt);
+
+  protected abstract boolean checkAccess();
+
+  public ResultSet query(String queryString, Consumer<PreparedStatement> setParams) {
+    ConnectDB connectDB = new ConnectDB();
+
+    try {
+      PreparedStatement pstmt = connectDB.getConnect().prepareStatement(queryString);
+
+      setParams.accept(pstmt);
+
+      return pstmt.executeQuery();
+    } catch (SQLException e) {
+      System.out.println("Failed to query data from table: " + getTableName());
+      e.printStackTrace();
+
+      return null;
+    }
+  }
+
+  public boolean update(String updateString, Consumer<PreparedStatement> setParams) {
+    ConnectDB connectDB = new ConnectDB();
+
+    try {
+      PreparedStatement pstmt = connectDB.getConnect().prepareStatement(updateString);
+
+      setParams.accept(pstmt);
+
+      pstmt.executeUpdate();
+
+      return true;
+    } catch (SQLException e) {
+      System.out.println("Failed to update data in table: " + getTableName());
+      e.printStackTrace();
+
+      return false;
+    } finally {
+      connectDB.closeConnect();
+    }
+  }
+
+  public boolean insert() {
+    if (!checkAccess())
+      return false;
+
+    return update(getInsertString(), (pstmt) -> setValueInsert(pstmt));
+  }
+
+  public ResultSet findById() {
+    return query("SELECT * FROM " + getTableName() + " WHERE " + getIdName() + " = ?", (pstmt) -> {
+      try {
+        pstmt.setInt(1, getId());
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+    });
+  }
+
+  public boolean delete() {
+    return update("DELETE FROM " + getTableName() + " WHERE " + getIdName() + " = ?", (pstmt) -> {
+      try {
+        pstmt.setInt(1, getId());
+      } catch (SQLException e) {
+        e.printStackTrace();
+      } finally {
+        new ConnectDB().closeConnect();
+      }
+    });
+  }
+
+}
+
