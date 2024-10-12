@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package db;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-/**
- *
- * @author ASUS
- */
+import java.util.LinkedList;
 
 public class PlaylistModel extends Model {
 
@@ -88,15 +80,20 @@ public class PlaylistModel extends Model {
   protected boolean checkAccess() {
     // check with title
     try {
-      if (super.query("SELECT * FROM " + getTableName() + " WHERE (user_id, name) = (?, ?)", (pstmt) -> {
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE (user_id, name) = (?, ?)", (pstmt) -> {
         try {
           pstmt.setInt(1, userId);
           pstmt.setString(2, name);
         } catch (SQLException e) {
           e.printStackTrace();
         }
-      }).next() == false)
+      });
+      if (qr.getResultSet().next() == false) {
+        qr.close();
         return true;
+      }
+
+      qr.close();
     } catch (Exception e) {
       e.printStackTrace();
       return false;
@@ -105,18 +102,36 @@ public class PlaylistModel extends Model {
     return false;
   }
 
+  @Override
+  public boolean delete() {
+    if (playlistId == -1) {
+      return false;
+    }
+
+    if (new PlaylistSongModel().deletePlaylist(playlistId)) {
+      return super.delete();
+    } else {
+      return false;
+    }
+  }
+
   public boolean findData() {
     if (playlistId == -1) {
       return false;
     }
 
     try {
-      ResultSet rs = super.findById();
+      QueryResult qr = super.findById();
+      ResultSet rs = qr.getResultSet();
       if (rs.next()) {
         this.name = rs.getString("name");
         this.userId = rs.getInt("user_id");
+
+        qr.close();
         return true;
       }
+
+      qr.close();
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -141,6 +156,36 @@ public class PlaylistModel extends Model {
     user.findData();
 
     return user;
+  }
+
+  public LinkedList<PlaylistModel> findByUserId(int userId) {
+    LinkedList<PlaylistModel> playlists = new LinkedList<PlaylistModel>();
+
+    try {
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE user_id = ?", (pstmt) -> {
+        try {
+          pstmt.setInt(1, userId);
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      });
+      ResultSet rs = qr.getResultSet();
+
+      while (rs.next()) {
+        PlaylistModel playlist = new PlaylistModel();
+        playlist.playlistId = rs.getInt("playlist_id");
+        playlist.name = rs.getString("name");
+        playlist.userId = rs.getInt("user_id");
+
+        playlists.add(playlist);
+      }
+
+      qr.close();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+    return playlists;
   }
 
 }

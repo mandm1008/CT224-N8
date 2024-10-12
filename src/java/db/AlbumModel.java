@@ -1,17 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package db;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-/**
- *
- * @author ASUS
- */
 
 public class AlbumModel extends Model {
 
@@ -93,14 +84,20 @@ public class AlbumModel extends Model {
   protected boolean checkAccess() {
     // check with title
     try {
-      if (super.query("SELECT * FROM " + getTableName() + " WHERE title = ?", (pstmt) -> {
+      QueryResult queryResult = super.query("SELECT * FROM " + getTableName() + " WHERE title = ?", (pstmt) -> {
         try {
           pstmt.setString(1, title);
         } catch (SQLException e) {
           e.printStackTrace();
         }
-      }).next() == false)
+      });
+
+      if (queryResult.getResultSet().next() == false) {
+        queryResult.close();
         return true;
+      }
+
+      queryResult.close();
     } catch (Exception e) {
       e.printStackTrace();
       return false;
@@ -115,13 +112,18 @@ public class AlbumModel extends Model {
     }
 
     try {
-      ResultSet rs = super.findById();
+      QueryResult queryResult = super.findById();
+      ResultSet rs = queryResult.getResultSet();
       if (rs.next()) {
         this.title = rs.getString("title");
         this.releaseYear = rs.getInt("release_year");
         this.artistId = rs.getInt("artist_id");
+
+        queryResult.close();
         return true;
       }
+
+      queryResult.close();
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -153,4 +155,3 @@ public class AlbumModel extends Model {
   }
 
 }
-

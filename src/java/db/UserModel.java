@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package db;
 
 import java.sql.PreparedStatement;
@@ -9,11 +5,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.LinkedList;
-
-/**
- *
- * @author ASUS
- */
 
 public class UserModel extends Model {
 
@@ -141,22 +132,32 @@ public class UserModel extends Model {
   protected boolean checkAccess() {
     // check with username, email
     try {
-      if (super.query("SELECT * FROM " + getTableName() + " WHERE username = ?", (pstmt) -> {
+      QueryResult qr1 = super.query("SELECT * FROM " + getTableName() + " WHERE username = ?", (pstmt) -> {
         try {
           pstmt.setString(1, username);
         } catch (SQLException e) {
           e.printStackTrace();
         }
-      }).next() == false) {
+      });
+
+      if (qr1.getResultSet().next() == false) {
+        qr1.close();
+
         try {
-          if (super.query("SELECT * FROM " + getTableName() + " WHERE email = ?", (pstmt) -> {
+          QueryResult qr2 = super.query("SELECT * FROM " + getTableName() + " WHERE email = ?", (pstmt) -> {
             try {
               pstmt.setString(1, email);
             } catch (SQLException e) {
               e.printStackTrace();
             }
-          }).next() == false)
+          });
+
+          if (qr2.getResultSet().next() == false) {
+            qr2.close();
             return true;
+          }
+
+          qr2.close();
         } catch (Exception e) {
           e.printStackTrace();
           return false;
@@ -171,6 +172,10 @@ public class UserModel extends Model {
 
     return false;
   }
+  
+  public boolean isAccessUser() {
+      return checkAccess();
+  }
 
   public boolean findData() {
     if (userId == -1) {
@@ -178,15 +183,19 @@ public class UserModel extends Model {
     }
 
     try {
-      ResultSet rs = super.findById();
+      QueryResult qr = super.findById();
+      ResultSet rs = qr.getResultSet();
       if (rs.next()) {
         this.username = rs.getString("username");
         this.password = rs.getString("password");
         this.email = rs.getString("email");
         this.avatar = rs.getString("avatar");
 
+        qr.close();
         return true;
       }
+
+      qr.close();
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -222,7 +231,8 @@ public class UserModel extends Model {
   public void getLikedSongs() {
     // get all liked songs
     UserLikes userLikes = new UserLikes(userId);
-    ResultSet rs = userLikes.findByUserId();
+    QueryResult qr = userLikes.findByUserId();
+    ResultSet rs = qr.getResultSet();
 
     try {
       while (rs.next()) {
@@ -236,6 +246,8 @@ public class UserModel extends Model {
     } catch (SQLException e) {
       e.printStackTrace();
     }
+
+    qr.close();
   }
 
   public boolean checkLikedSong(int songId) {
@@ -256,6 +268,9 @@ public class UserModel extends Model {
 
     userLikes.delete();
   }
+  
+  public User toUser() {
+      return new User(this);
+  }
 
 }
-

@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package db;
 
 import java.util.LinkedList;
@@ -9,11 +5,6 @@ import java.util.LinkedList;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-/**
- *
- * @author ASUS
- */
 
 public class SongModel extends Model {
 
@@ -23,11 +14,12 @@ public class SongModel extends Model {
       "song_id INT AUTO_INCREMENT PRIMARY KEY, " +
       "title VARCHAR(255) NOT NULL, " +
       "album_id INT NULL, " +
-      "artist_id INT DEFAULT 0, " +
+      "artist_id INT NULL, " +
+      "user_id INT NULL, " +
       "href VARCHAR(2083) NOT NULL," +
       "image VARCHAR(2083) NOT NULL," +
       "view INT DEFAULT 0," +
-      "FOREIGN KEY (artist_id) REFERENCES Artists(artist_id)," +
+      "FOREIGN KEY (artist_id) REFERENCES Artists(artist_id) ON DELETE SET NULL," +
       "FOREIGN KEY (album_id) REFERENCES Albums(album_id) ON DELETE SET NULL)";
   private final String tableName = "Songs";
   private final String idName = "song_id";
@@ -47,11 +39,12 @@ public class SongModel extends Model {
   }
 
   // for model
-  private int songId;
+  private int songId = -1;
   private String title;
   private int albumId;
   private int artistId;
-  private String artistName = "Unkown";
+  private int userId = 0;
+  private String artistName = "system";
   private String href;
   private String image;
   private int view;
@@ -61,6 +54,7 @@ public class SongModel extends Model {
     this.title = "";
     this.albumId = -1;
     this.artistId = -1;
+    this.userId = -1;
     this.href = "";
     this.image = "";
     this.view = 0;
@@ -76,9 +70,16 @@ public class SongModel extends Model {
     this.image = new String(image);
   }
 
-  public SongModel(String title, int albumId, int artistId, String href, String image) {
+  public SongModel(String title, int artistId, String href, String image) {
     this.title = new String(title);
-    this.albumId = albumId;
+    this.artistId = artistId;
+    this.href = new String(href);
+    this.image = new String(image);
+  }
+
+  public SongModel(String title, int userId, int artistId, String href, String image) {
+    this.title = new String(title);
+    this.userId = userId;
     this.artistId = artistId;
     this.href = new String(href);
     this.image = new String(image);
@@ -88,6 +89,7 @@ public class SongModel extends Model {
     this.title = new String(song.title);
     this.albumId = song.albumId;
     this.artistId = song.artistId;
+    this.userId = song.userId;
     this.href = new String(song.href);
     this.image = new String(song.image);
     this.view = song.view;
@@ -95,7 +97,7 @@ public class SongModel extends Model {
 
   @Override
   protected String getInsertString() {
-    return "INSERT INTO " + getTableName() + " (title, artist_id, href, image) VALUES (?, ?, ?, ?)";
+    return "INSERT INTO " + getTableName() + " (title, artist_id, user_id, href, image) VALUES (?, ?, ?, ?, ?)";
   }
 
   @Override
@@ -108,8 +110,9 @@ public class SongModel extends Model {
     try {
       pstmt.setString(1, title);
       pstmt.setInt(2, artistId);
-      pstmt.setString(3, href);
-      pstmt.setString(4, image);
+      pstmt.setInt(3, userId);
+      pstmt.setString(4, href);
+      pstmt.setString(5, image);
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -119,14 +122,19 @@ public class SongModel extends Model {
   protected boolean checkAccess() {
     // check with title
     try {
-      if (super.query("SELECT * FROM " + getTableName() + " WHERE title = ?", (pstmt) -> {
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE title = ?", (pstmt) -> {
         try {
           pstmt.setString(1, title);
         } catch (SQLException e) {
           e.printStackTrace();
         }
-      }).next() == false)
+      });
+      if (qr.getResultSet().next() == false) {
+        qr.close();
         return true;
+      }
+
+      qr.close();
     } catch (Exception e) {
       e.printStackTrace();
       return false;
@@ -146,24 +154,51 @@ public class SongModel extends Model {
     return false;
   }
 
+  public void findByTitleAndHref() {
+    try {
+      QueryResult qr = super.query("SELECT * FROM Songs WHERE title = ? AND href = ?", (pstmt) -> {
+        try {
+          pstmt.setString(1, title);
+          pstmt.setString(2, href);
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      });
+      ResultSet rs = qr.getResultSet();
+
+      if (rs.next()) {
+        songId = rs.getInt("song_id");
+      }
+
+      qr.close();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
   public boolean findData() {
     if (songId == -1) {
       return false;
     }
 
     try {
-      ResultSet rs = super.findById();
+      QueryResult qr = super.findById();
+      ResultSet rs = qr.getResultSet();
 
       if (rs.next()) {
         title = rs.getString("title");
         albumId = rs.getInt("album_id");
         artistId = rs.getInt("artist_id");
+        userId = rs.getInt("user_id");
         href = rs.getString("href");
         image = rs.getString("image");
         view = rs.getInt("view");
 
+        qr.close();
         return true;
       }
+
+      qr.close();
     } catch (SQLException e) {
       e.printStackTrace();
     }
@@ -191,6 +226,10 @@ public class SongModel extends Model {
 
   public int getSongId() {
     return songId;
+  }
+
+  public int getUserId() {
+    return userId;
   }
 
   public String getTitle() {
@@ -235,6 +274,7 @@ public class SongModel extends Model {
       song.href = rs.getString("href");
       song.image = rs.getString("image");
       song.view = rs.getInt("view");
+      song.userId = rs.getInt("user_id");
 
       ArtistModel artist = song.getArtist();
       if (artist.getName() != null) {
@@ -249,12 +289,12 @@ public class SongModel extends Model {
     return song;
   }
 
-  private static LinkedList<SongModel> cacheNewSongs;
+  // private static LinkedList<SongModel> cacheNewSongs;
 
   public static LinkedList<SongModel> getNewSongs(int quantity) {
-    if (cacheNewSongs != null) {
-      return cacheNewSongs;
-    }
+    // if (cacheNewSongs != null) {
+    // return cacheNewSongs;
+    // }
 
     LinkedList<SongModel> songs = new LinkedList<SongModel>();
     ConnectDB connectDB = new ConnectDB();
@@ -275,18 +315,18 @@ public class SongModel extends Model {
       connectDB.closeConnect();
     }
 
-    // save cache
-    cacheNewSongs = songs;
+    // // save cache
+    // cacheNewSongs = songs;
 
     return songs;
   }
 
-  private static LinkedList<SongModel> cacheMostViewSongs;
+  // private static LinkedList<SongModel> cacheMostViewSongs;
 
   public static LinkedList<SongModel> getMostViewSongs(int quantity) {
-    if (cacheMostViewSongs != null) {
-      return cacheMostViewSongs;
-    }
+    // if (cacheMostViewSongs != null) {
+    // return cacheMostViewSongs;
+    // }
 
     LinkedList<SongModel> songs = new LinkedList<SongModel>();
     ConnectDB connectDB = new ConnectDB();
@@ -307,8 +347,8 @@ public class SongModel extends Model {
       connectDB.closeConnect();
     }
 
-    // save cache
-    cacheMostViewSongs = songs;
+    // // save cache
+    // cacheMostViewSongs = songs;
 
     return songs;
   }
@@ -354,6 +394,30 @@ public class SongModel extends Model {
       connectDB.closeConnect();
     }
 
+    return songs;
+  }
+
+  public LinkedList<SongModel> getSongsByUserId(int userId) {
+    LinkedList<SongModel> songs = new LinkedList<SongModel>();
+
+    QueryResult qr = super.query("SELECT * FROM Songs WHERE user_id = ?", (pstmt) -> {
+      try {
+        pstmt.setInt(1, userId);
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+    });
+    ResultSet rs = qr.getResultSet();
+
+    try {
+      while (rs.next()) {
+        songs.add(readResultSet(rs));
+      }
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+
+    qr.close();
     return songs;
   }
 

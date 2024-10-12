@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package db;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-/**
- *
- * @author ASUS
- */
+import java.util.LinkedList;
 
 public class PlaylistSongModel extends Model {
 
@@ -89,15 +81,22 @@ public class PlaylistSongModel extends Model {
   protected boolean checkAccess() {
     // check with title
     try {
-      if (super.query("SELECT * FROM " + getTableName() + " WHERE (playlist_id, song_id) = (?, ?)", (pstmt) -> {
-        try {
-          pstmt.setInt(1, playlistId);
-          pstmt.setInt(2, songId);
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }).next() == false)
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE (playlist_id, song_id) = (?, ?)",
+          (pstmt) -> {
+            try {
+              pstmt.setInt(1, playlistId);
+              pstmt.setInt(2, songId);
+            } catch (SQLException e) {
+              e.printStackTrace();
+            }
+          });
+
+      if (qr.getResultSet().next() == false) {
+        qr.close();
         return true;
+      }
+
+      qr.close();
     } catch (Exception e) {
       e.printStackTrace();
       return false;
@@ -112,12 +111,45 @@ public class PlaylistSongModel extends Model {
     }
 
     try {
-      ResultSet rs = super.findById();
+      QueryResult qr = super.findById();
+      ResultSet rs = qr.getResultSet();
       if (rs.next()) {
         this.playlistId = rs.getInt("playlist_id");
         this.songId = rs.getInt("song_id");
+
+        qr.close();
         return true;
       }
+
+      qr.close();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+    return false;
+  }
+
+  public boolean getDataBySongIdAndPlaylistId() {
+    try {
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE playlist_id = ? AND song_id = ?",
+          (pstmt) -> {
+            try {
+              pstmt.setInt(1, playlistId);
+              pstmt.setInt(2, songId);
+            } catch (SQLException e) {
+              e.printStackTrace();
+            }
+          });
+      ResultSet rs = qr.getResultSet();
+
+      if (rs.next()) {
+        this.playlistSongId = rs.getInt("playlist_song_id");
+
+        qr.close();
+        return true;
+      }
+
+      qr.close();
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -137,17 +169,45 @@ public class PlaylistSongModel extends Model {
     return playlistSongId;
   }
 
-  public PlaylistModel getPlaylist() {
-    PlaylistModel playlist = new PlaylistModel(playlistId);
-    playlist.findData();
+  public LinkedList<SongModel> getSongsByPlaylistId(int playlistId) {
+    LinkedList<SongModel> songs = new LinkedList<>();
 
-    return playlist;
+    try {
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE playlist_id = ?", (pstmt) -> {
+        try {
+          pstmt.setInt(1, playlistId);
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      });
+      ResultSet rs = qr.getResultSet();
+
+      while (rs.next()) {
+        SongModel song = new SongModel(rs.getInt("song_id"));
+        song.findData();
+        songs.add(song);
+      }
+
+      qr.close();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+    return songs;
   }
 
-  public SongModel getSong() {
-    SongModel song = new SongModel(songId);
-    song.findData();
-
-    return song;
+  public boolean deletePlaylist(int playlistId) {
+    try {
+      return super.update("DELETE FROM " + getTableName() + " WHERE playlist_id = ?", (pstmt) -> {
+        try {
+          pstmt.setInt(1, playlistId);
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      });
+    } catch (Exception e) {
+      e.printStackTrace();
+      return false;
+    }
   }
 }

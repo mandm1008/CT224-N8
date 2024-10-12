@@ -10,48 +10,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Register</title>
+    <title>Music Signup</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <div class="music-login-container">
+    <div class="music-signup-container">
         <div class="music-logo">
             <img src="images/music-logo.png" alt="Music Logo">
         </div>
-        <h2>Login to Enjoy Music</h2>
+        <h2>Create an Account</h2>
         
         <% String errorMessage = request.getParameter("err"); %>
         <div id="errorMessage" class="error-message" style="<%= (errorMessage != null) ? "display: block;" : "display: none;" %>">
             <%
-                if (errorMessage != null && errorMessage.equals("invalid")) {
+                if (errorMessage != null && errorMessage.equals("userexists")) {
             %>
-                <p>Username or password is wrong!</p>
+                <p>Username already exists!</p>
+            <%
+                } else if (errorMessage != null && errorMessage.equals("mismatch")) {
+            %>
+                <p>Passwords do not match!</p>
             <%
                 }
             %>
         </div>
         
-        <form action="api/login" method="post" id="loginForm">
+        <form action="api/signup" method="post" id="signupForm" onsubmit="handleSignupSubmit(event)">
             <div class="form-group">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required placeholder="Enter your username">
+                <input type="text" id="username" name="username" required placeholder="Choose your username">
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required placeholder="Enter your email">
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <input type="password" id="password" name="password" required placeholder="Choose a password">
             </div>
             <div class="form-group">
-                <button type="submit" id="loginBtn">Registe</button>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+            </div>
+            <div class="form-group">
+                <button type="submit" id="signupBtn">Sign Up</button>
             </div>
         </form>
-        <div class="signup-link">
-            <p>You have an account? <a href="login.jsp">Login here</a></p>
+        <div class="login-link">
+            <p>Already have an account? <a href="login.jsp">Log in here</a></p>
         </div>
     </div>
-    <script src="js/login.js"></script>
+    <script src="js/account.js"></script>
 </body>
 </html>

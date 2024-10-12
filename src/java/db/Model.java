@@ -1,18 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package db;
 
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.function.Consumer;
-
-/**
- *
- * @author ASUS
- */
 
 public abstract class Model {
   protected abstract String getInsertString();
@@ -27,7 +17,7 @@ public abstract class Model {
 
   protected abstract boolean checkAccess();
 
-  public ResultSet query(String queryString, Consumer<PreparedStatement> setParams) {
+  public QueryResult query(String queryString, Consumer<PreparedStatement> setParams) {
     ConnectDB connectDB = new ConnectDB();
 
     try {
@@ -35,7 +25,7 @@ public abstract class Model {
 
       setParams.accept(pstmt);
 
-      return pstmt.executeQuery();
+      return new QueryResult(connectDB, pstmt.executeQuery());
     } catch (SQLException e) {
       System.out.println("Failed to query data from table: " + getTableName());
       e.printStackTrace();
@@ -72,7 +62,7 @@ public abstract class Model {
     return update(getInsertString(), (pstmt) -> setValueInsert(pstmt));
   }
 
-  public ResultSet findById() {
+  public QueryResult findById() {
     return query("SELECT * FROM " + getTableName() + " WHERE " + getIdName() + " = ?", (pstmt) -> {
       try {
         pstmt.setInt(1, getId());
@@ -95,4 +85,3 @@ public abstract class Model {
   }
 
 }
-

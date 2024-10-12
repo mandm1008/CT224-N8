@@ -1,17 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package db;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-/**
- *
- * @author ASUS
- */
 
 public class UserLikes extends Model {
 
@@ -83,17 +74,21 @@ public class UserLikes extends Model {
   protected boolean checkAccess() {
     // check with userId and songId
     try {
-      if (super.query("SELECT * FROM " + getTableName() + " WHERE user_id = ? AND song_id = ?", (pstmt) -> {
-        try {
-          pstmt.setInt(1, userId);
-          pstmt.setInt(2, songId);
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }).next()) {
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE user_id = ? AND song_id = ?",
+          (pstmt) -> {
+            try {
+              pstmt.setInt(1, userId);
+              pstmt.setInt(2, songId);
+            } catch (SQLException e) {
+              e.printStackTrace();
+            }
+          });
+      if (qr.getResultSet().next()) {
+        qr.close();
         return false;
       }
 
+      qr.close();
       return true;
     } catch (SQLException e) {
       e.printStackTrace();
@@ -103,24 +98,28 @@ public class UserLikes extends Model {
 
   public void findData() {
     try {
-      ResultSet rs = super.query("SELECT * FROM " + getTableName() + " WHERE user_id = ? AND song_id = ?", (pstmt) -> {
-        try {
-          pstmt.setInt(1, userId);
-          pstmt.setInt(2, songId);
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      });
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE user_id = ? AND song_id = ?",
+          (pstmt) -> {
+            try {
+              pstmt.setInt(1, userId);
+              pstmt.setInt(2, songId);
+            } catch (SQLException e) {
+              e.printStackTrace();
+            }
+          });
+      ResultSet rs = qr.getResultSet();
 
       if (rs.next()) {
         userLikesId = rs.getInt("user_like_id");
       }
+
+      qr.close();
     } catch (SQLException e) {
       e.printStackTrace();
     }
   }
 
-  public ResultSet findByUserId() {
+  public QueryResult findByUserId() {
     return super.query("SELECT * FROM " + getTableName() + " WHERE user_id = ?", (pstmt) -> {
       try {
         pstmt.setInt(1, userId);
@@ -132,17 +131,21 @@ public class UserLikes extends Model {
 
   public boolean checkLikeUser() {
     try {
-      return super.query("SELECT * FROM " + getTableName() + " WHERE user_id = ? AND song_id = ?", (pstmt) -> {
-        try {
-          pstmt.setInt(1, userId);
-          pstmt.setInt(2, songId);
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }).next();
+      QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE user_id = ? AND song_id = ?",
+          (pstmt) -> {
+            try {
+              pstmt.setInt(1, userId);
+              pstmt.setInt(2, songId);
+            } catch (SQLException e) {
+              e.printStackTrace();
+            }
+          });
+      boolean result = qr.getResultSet().next();
+
+      qr.close();
+      return result;
     } catch (SQLException e) {
       return false;
     }
   }
 }
-
