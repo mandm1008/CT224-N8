@@ -11,8 +11,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        
+        <%@include file="/WEB-INF/views/header-head.jsp" %>
     </head>
     <body>
+        <jsp:include page="/WEB-INF/views/header.jsp" />
+        
         <h1>Hello World! <%
             User user = (User) request.getSession().getAttribute("user");
             if(user != null) out.println(user.username + "!!!");
