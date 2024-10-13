@@ -90,51 +90,45 @@ public class ConnectDB {
     // default songs
     SongModel song1 = new SongModel(
         "Áng mây vô tình",
-        "https://drive.google.com/uc?export=download&id=11lSpMvavILLYt1tZVzIME_qXMGLzSu6J",
-        "https://drive.google.com/uc?export=download&id=1c8d4_FHjHKi4Uq6cOmH3AiKUckzw7Qsg");
+        "/uploads/audio/angmayvotinh.mp3",
+        "/uploads/images/angmayvotinh.jpg");
     song1.insert("Lương Gia Hùng");
 
     SongModel song2 = new SongModel(
         "Cho Mình Em",
-        "https://drive.google.com/uc?export=download&id=1fvPeoGrW8YJGPMQOTN6X8Nl7GNr_ttx0",
-        "https://drive.google.com/uc?export=download&id=10HfybCtERx8H4Xb-NkmkTYm1tXYcJRWx");
+        "/uploads/audio/chominhem.mp3",
+        "/uploads/images/chominhem.jpg");
     song2.insert("Binz");
 
     SongModel song3 = new SongModel(
         "Trốn tìm",
-        "https://drive.google.com/uc?export=download&id=1eWvul47FgBXsBxLRbLydZS0lnaG3rDaq",
-        "https://drive.google.com/uc?export=download&id=1TFgSXux8yp5_jWPqjJS0y4vuMKm9pYj_");
+        "/uploads/audio/trontim.mp3",
+        "/uploads/images/trontim.jpg");
     song3.insert("Đen Vâu");
 
     SongModel song4 = new SongModel(
         "Đường tôi chở em về",
-        "https://drive.google.com/uc?export=download&id=1e_1nzy-Ywgf1y3OEFxaAA8VqmMtbDSmP",
-        "https://drive.google.com/uc?export=download&id=1WXA0HVTOEBlemJwbc0L-WqO6ffygoCtd");
+        "/uploads/audio/duongtoichoemve.mp3",
+        "/uploads/images/duongtoichoemve.jpg");
     song4.insert("Buitruonglinh");
 
     SongModel song5 = new SongModel(
         "Cho tôi lang thang",
-        "https://drive.google.com/uc?export=download&id=1FxVjub9ZEiaVc3pNZTcPhhMmPKj7ortp",
-        "https://drive.google.com/uc?export=download&id=1aHE0RECh44JCi_0pwMJI52NQyRrfi1LL");
+        "/uploads/audio/chotoilangthang.mp3",
+        "/uploads/images/chotoilangthang.jpg");
     song5.insert("Đen Vâu");
 
     SongModel song6 = new SongModel(
         "Người lạ ơi",
-        "https://drive.google.com/uc?export=download&id=1kFSy4UQyXUGkL9xeU8cQ1b2_7dZb0231",
-        "https://drive.google.com/uc?export=download&id=1YNAkDJO9lVpLQuzfi66IjD5lDzfMh-km");
+        "/uploads/audio/nguoilaoi.mp3",
+        "/uploads/images/nguoilaoi.jpg");
     song6.insert("Karik");
 
     SongModel song7 = new SongModel(
         "Người thứ ba",
-        "https://drive.google.com/uc?export=download&id=1NzvBCmbXsmYIWz468jNYVwOFIDPM5QNC",
-        "https://drive.google.com/uc?export=download&id=17MyHxv67p4HBDAq0L5E5Vr4wpKMoKmc0");
+        "/uploads/audio/nguoithuba.mp3",
+        "/uploads/images/nguoithu3a.jpg");
     song7.insert("H2K");
-
-    SongModel song8 = new SongModel(
-        "Người lạ ơi",
-        "https://drive.google.com/uc?export=download&id=1kFSy4UQyXUGkL9xeU8cQ1b2_7dZb0231",
-        "https://drive.google.com/uc?export=download&id=1YNAkDJO9lVpLQuzfi66IjD5lDzfMh-km");
-    song8.insert("Karik");
 
     System.out.println("Init data for Songs");
 

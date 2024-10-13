@@ -296,7 +296,7 @@ public class SongModel extends Model {
     // return cacheNewSongs;
     // }
 
-    LinkedList<SongModel> songs = new LinkedList<SongModel>();
+    LinkedList<SongModel> songs = new LinkedList<>();
     ConnectDB connectDB = new ConnectDB();
 
     try {
@@ -307,7 +307,10 @@ public class SongModel extends Model {
       ResultSet rs = pstmt.executeQuery();
 
       while (rs.next()) {
-        songs.add(readResultSet(rs));
+        SongModel s = readResultSet(rs);
+        ArtistModel a = s.getArtist();
+        s.artistName = a.getName();
+        songs.add(s);
       }
     } catch (SQLException e) {
       e.printStackTrace();
