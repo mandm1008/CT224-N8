@@ -8,11 +8,11 @@ import java.util.concurrent.Executors;
 
 public class ConnectDB {
   // local mysql
-  private String url = "jdbc:mysql://localhost:3306/"; // Database URL
-  private String dbName = "musicproject"; // Database Name
-  private String driver = "com.mysql.cj.jdbc.Driver"; // Driver Name
-  private String userName = "root"; // Database Username
-  private String password = ""; // Database Password
+  private final String url = "jdbc:mysql://localhost:3306/"; // Database URL
+  private final String dbName = "musicproject"; // Database Name
+  private final String driver = "com.mysql.cj.jdbc.Driver"; // Driver Name
+  private final String userName = "root"; // Database Username
+  private final String password = ""; // Database Password
 
   private Connection conn = null;
 

@@ -10,22 +10,37 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Enjoy Music - Home</title>
 
         <%@include file="/WEB-INF/views/header-head.jsp" %>        
         <%@include file="/WEB-INF/views/player-head.jsp" %>
     </head>
     <body>
         <jsp:include page="/WEB-INF/views/header.jsp" />
-
+        
+        
         <h1>
-            Hello World! 
+            Danh sach nhac
             <%
                 User user = (User) request.getSession().getAttribute("user");
                 if (user != null)
                     out.println(user.username + "!!!");
             %>
         </h1>
+        <<h1>Bang xep hang</h1>
+        <table id="ranking-table">
+            <thead>
+                <tr>
+                    <th>Thu hang</th>
+                    <th>Bai hat</th>
+                    <th>Nghe si</th>
+                    <th>Luot nghe</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
 
         <jsp:include page="/WEB-INF/views/player.jsp" />
     </body>
