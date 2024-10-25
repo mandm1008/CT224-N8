@@ -1,0 +1,66 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Oct 21, 2024, 3:06:39 PM
+    Author     : ASUS
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    width: 1080px;
+    margin: auto;
+    padding: 12px 0;
+    font-size: 24px;
+}
+
+.ctn-songs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1080px;
+    align-items: center;
+    margin: auto;
+}
+
+.ctn-songs_item {
+    display: flex;
+    align-items: center;
+    width: 32%;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background-color: #1e1e2e;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.ctn-songs_item img {
+    width: 100px;
+}
+
+.ctn-songs_info {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.ctn-songs_info p {
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.ctn-songs_info span {
+    font-size: 14px;
+    color: #aaa;
+}

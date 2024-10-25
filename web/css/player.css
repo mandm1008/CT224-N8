@@ -65,11 +65,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0 8px;
 }
 
 .control-btn img {
     width: auto;
     height: 24px;
+}
+
+.control-btn.play-btn img {
+    height: 28px;
 }
 
 .control-btn:focus {

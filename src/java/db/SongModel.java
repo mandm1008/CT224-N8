@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import DAO.Song;
+
 public class SongModel extends Model {
 
   // defind table
@@ -422,6 +424,10 @@ public class SongModel extends Model {
 
     qr.close();
     return songs;
+  }
+  
+  public Song toSong() {
+      return new Song(this);
   }
 
 }

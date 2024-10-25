@@ -3,14 +3,15 @@ package org.apache.jsp;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.jsp.*;
-import DAO.User;
+import db.SongModel;
 import DAO.Song;
+import java.util.LinkedList;
 import com.google.gson.Gson;
 import java.util.HashMap;
 import java.util.LinkedList;
 import db.SongModel;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -60,10 +61,14 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
  String contextPath = request.getContextPath();
       out.write('\n');
 
-    LinkedList<SongModel> mostViewSongs = SongModel.getMostViewSongs(9);
+    String searchKey = request.getParameter("searchkey");
+    LinkedList<SongModel> songs = SongModel.searchSongs(searchKey);
 
       out.write("\n");
       out.write("\n");
@@ -115,109 +120,49 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    }\n");
       out.write("</script>");
       out.write("\n");
-      out.write("        <link rel=\"stylesheet\" href=\"");
-      out.print(contextPath);
-      out.write("/css/index.css\">\n");
-      out.write("        <script src=\"");
-      out.print(contextPath);
-      out.write("/js/home.js\" defer></script>\n");
+      out.write("\n");
+      out.write("        <link href=\"css/search.css\" rel=\"stylesheet\" />\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/WEB-INF/views/header.jsp", out, false);
       out.write("\n");
       out.write("\n");
-      out.write("        <div class=\"home-wrapper\">\n");
-      out.write("            <div class=\"home-element\">\n");
-      out.write("                <h2>Nhạc nổi bật</h2>\n");
+      out.write("        <div class=\"wrapper\">\n");
+      out.write("            <h3 class=\"title\">Danh sách nhạc (");
+      out.print(songs.size());
+      out.write(")</h3>\n");
+      out.write("            <div class=\"ctn-songs\">\n");
+      out.write("                ");
+ for (int i = 0; i < songs.size(); i++) {
+                        Song song = songs.get(i).toSong();
+                
       out.write("\n");
-      out.write("                <div class=\"music-box\">\n");
-      out.write("                    ");
- for (int i = 0; i < mostViewSongs.size(); i++) {
-                            Song song = mostViewSongs.get(i).toSong();
-                    
       out.write("\n");
-      out.write("\n");
-      out.write("                    <div class=\"music-element\">\n");
-      out.write("                        <img src=\"");
+      out.write("                <div class=\"ctn-songs_item\" ");
+      out.print(i % 3 != 0 ? "style=\"margin-left: 12px;\"" : "");
+      out.write(">\n");
+      out.write("                    <img src=\"");
       out.print(contextPath + song.image);
       out.write("\" alt=\"");
       out.print(song.title);
-      out.write("\" class=\"music-image\"/>\n");
+      out.write("\" />\n");
       out.write("\n");
-      out.write("                        <div class=\"music-info\">\n");
-      out.write("                            <p class=\"music-info--title\">");
+      out.write("                    <div class=\"ctn-songs_info\">\n");
+      out.write("                        <p>");
       out.print(song.title);
       out.write("</p>\n");
-      out.write("\n");
-      out.write("                            <p class=\"music-info--artist\">\n");
-      out.write("                                <span>");
+      out.write("                        <p>\n");
+      out.write("                            <span>");
       out.print(song.artistName);
       out.write("</span>\n");
-      out.write("                            </p>\n");
-      out.write("                        </div>\n");
+      out.write("                        </p>\n");
       out.write("                    </div>\n");
+      out.write("                </div>\n");
       out.write("\n");
-      out.write("                    ");
+      out.write("                ");
  }
       out.write("\n");
-      out.write("                </div>\n");
-      out.write("            </div>\n");
-      out.write("\n");
-      out.write("            <div class=\"home-element\">\n");
-      out.write("                <h2>Playlist đã nghe gần đây</h2>\n");
-      out.write("\n");
-      out.write("                <div></div>\n");
-      out.write("            </div>\n");
-      out.write("\n");
-      out.write("            <div class=\"home-element\">\n");
-      out.write("                <h2>BHX</h2>\n");
-      out.write("                \n");
-      out.write("                <div class=\"slider-container\">\n");
-      out.write("                    <div class=\"home-slider\">\n");
-      out.write("                        ");
- for (int i = 0; i < mostViewSongs.size() && i < 5; i++) {
-                                Song song = mostViewSongs.get(i).toSong();
-                        
-      out.write("\n");
-      out.write("\n");
-      out.write("                        <div class=\"music-element slider-element\">\n");
-      out.write("                            <div class=\"music-top\">\n");
-      out.write("                                <h2>");
-      out.print(i+1);
-      out.write("</h2>\n");
-      out.write("                            </div>\n");
-      out.write("                            <img src=\"");
-      out.print(contextPath + song.image);
-      out.write("\" alt=\"");
-      out.print(song.title);
-      out.write("\" class=\"music-image\"/>\n");
-      out.write("\n");
-      out.write("                            <div class=\"music-info\">");
-      out.print(song.title);
-      out.write("</p>\n");
-      out.write("\n");
-      out.write("                                <p class=\"music-info--title\">\n");
-      out.write("                                <p class=\"music-info--artist\">\n");
-      out.write("                                    <span>");
-      out.print(song.artistName);
-      out.write("</span>\n");
-      out.write("                                </p>\n");
-      out.write("                            </div>\n");
-      out.write("                        </div>\n");
-      out.write("\n");
-      out.write("                        ");
- }
-      out.write("\n");
-      out.write("                    </div>\n");
-      out.write("\n");
-      out.write("                    <button class=\"prev-btn\"><img src=\"");
-      out.print(contextPath);
-      out.write("/images/icons/backward-solid.png\" alt=\"Previous\"></button>\n");
-      out.write("                    <button class=\"next-btn\"><img src=\"");
-      out.print(contextPath);
-      out.write("/images/icons/forward-solid.png\" alt=\"Next\"></button>\n");
-      out.write("                </div>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");
       out.write("\n");
@@ -226,6 +171,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("    </body>\n");
       out.write("</html>\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

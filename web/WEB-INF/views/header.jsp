@@ -5,24 +5,28 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="db.User" %>
+<%@page import="DAO.User" %>
 
 <% String contextPath = request.getContextPath(); %>
 <% User user = (User) request.getSession().getAttribute("user"); %>
 
+<script>
+    var contextPath = "<%=contextPath%>";
+</script>
+
 <header class="header">
     <div class="container">
         <div class="logo">
-            <a href="#">Enjoy Music</a>
+            <a href="<%=contextPath%>">Enjoy Music</a>
         </div>
         <nav class="nav-links">
-            <a href="#">Trang chủ</a>
-            <a href="#">BXH</a>
-            <a href="#">Thể loại</a>
+            <a href="<%=contextPath%>">Trang chủ</a>
+            <a href="<%=contextPath%>">BXH</a>
+            <a href="<%=contextPath%>">Thể loại</a>
         </nav>
         <div class="search-bar">
-            <input type="text" placeholder="Tìm kiếm bài hát, ca sĩ...">
-            <button>Tìm kiếm</button>
+            <input id="searchInput" type="text" placeholder="Tìm kiếm bài hát, ca sĩ...">
+            <button id="searchButton">Tìm kiếm</button>
         </div>
         
         <% if (user == null) { %>

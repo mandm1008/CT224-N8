@@ -130,11 +130,21 @@ const playerManager = {
         document.getElementById('shuffleBtn').addEventListener('click', () => {
             this.isShuffling = !this.isShuffling;
             console.log('Shuffle mode:', this.isShuffling);
+            if (this.isShuffling) {
+                document.getElementById('shuffleBtn').style = "opacity: 1";
+            } else {
+                document.getElementById('shuffleBtn').style = "opacity: 0.4";
+            }
         });
 
         document.getElementById('repeatBtn').addEventListener('click', () => {
             this.isRepeating = !this.isRepeating;
             console.log('Repeat mode:', this.isRepeating);
+            if (this.isRepeating) {
+                document.getElementById('repeatBtn').style = "opacity: 1";
+            } else {
+                document.getElementById('repeatBtn').style = "opacity: 0.4";
+            }
         });
 
         document.getElementById('progressBar').addEventListener('input', (event) => {

@@ -61,7 +61,7 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\n");
       out.write("\n");
       out.write("    <div class=\"player-controls\">\n");
-      out.write("        <button id=\"shuffleBtn\" class=\"control-btn\">\n");
+      out.write("        <button id=\"shuffleBtn\" class=\"control-btn\" style=\"opacity: 0.4\">\n");
       out.write("            <img src=\"");
       out.print(contextPath);
       out.write("/images/icons/shuffle-solid.png\" alt=\"Shuffle\">\n");
@@ -71,7 +71,7 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print(contextPath);
       out.write("/images/icons/backward-step-solid.png\" alt=\"Previous\">\n");
       out.write("        </button>\n");
-      out.write("        <button id=\"playBtn\" class=\"control-btn\">\n");
+      out.write("        <button id=\"playBtn\" class=\"control-btn play-btn\">\n");
       out.write("            <img src=\"");
       out.print(contextPath);
       out.write("/images/icons/play-solid.png\" alt=\"Play\">\n");
@@ -81,7 +81,7 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print(contextPath);
       out.write("/images/icons/forward-step-solid.png\" alt=\"Next\">\n");
       out.write("        </button>\n");
-      out.write("        <button id=\"repeatBtn\" class=\"control-btn\">\n");
+      out.write("        <button id=\"repeatBtn\" class=\"control-btn\" style=\"opacity: 0.4\">\n");
       out.write("            <img src=\"");
       out.print(contextPath);
       out.write("/images/icons/repeat-solid.png\" alt=\"Repeat\">\n");

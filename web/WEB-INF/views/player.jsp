@@ -18,19 +18,19 @@
     </div>
 
     <div class="player-controls">
-        <button id="shuffleBtn" class="control-btn">
+        <button id="shuffleBtn" class="control-btn" style="opacity: 0.4">
             <img src="<%=contextPath%>/images/icons/shuffle-solid.png" alt="Shuffle">
         </button>
         <button id="prevBtn" class="control-btn">
             <img src="<%=contextPath%>/images/icons/backward-step-solid.png" alt="Previous">
         </button>
-        <button id="playBtn" class="control-btn">
+        <button id="playBtn" class="control-btn play-btn">
             <img src="<%=contextPath%>/images/icons/play-solid.png" alt="Play">
         </button>
         <button id="nextBtn" class="control-btn">
             <img src="<%=contextPath%>/images/icons/forward-step-solid.png" alt="Next">
         </button>
-        <button id="repeatBtn" class="control-btn">
+        <button id="repeatBtn" class="control-btn" style="opacity: 0.4">
             <img src="<%=contextPath%>/images/icons/repeat-solid.png" alt="Repeat">
         </button>
     </div>

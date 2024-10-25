@@ -18,8 +18,8 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
-                    <file>${file.reference.lib-GlassFish_Server}</file>
-                    <path-in-war>WEB-INF/classes</path-in-war>
+                    <file>${file.reference.taglibs-standard-impl-1.2.5.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
             <web-module-additional-libraries/>

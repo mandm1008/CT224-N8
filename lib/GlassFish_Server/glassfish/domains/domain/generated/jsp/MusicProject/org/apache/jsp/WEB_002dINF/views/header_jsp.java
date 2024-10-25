@@ -3,7 +3,7 @@ package org.apache.jsp.WEB_002dINF.views;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.jsp.*;
-import db.User;
+import DAO.User;
 
 public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -53,19 +53,33 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
  User user = (User) request.getSession().getAttribute("user"); 
       out.write("\n");
       out.write("\n");
+      out.write("<script>\n");
+      out.write("    var contextPath = \"");
+      out.print(contextPath);
+      out.write("\";\n");
+      out.write("</script>\n");
+      out.write("\n");
       out.write("<header class=\"header\">\n");
       out.write("    <div class=\"container\">\n");
       out.write("        <div class=\"logo\">\n");
-      out.write("            <a href=\"#\">Enjoy Music</a>\n");
+      out.write("            <a href=\"");
+      out.print(contextPath);
+      out.write("\">Enjoy Music</a>\n");
       out.write("        </div>\n");
       out.write("        <nav class=\"nav-links\">\n");
-      out.write("            <a href=\"#\">Trang chủ</a>\n");
-      out.write("            <a href=\"#\">BXH</a>\n");
-      out.write("            <a href=\"#\">Thể loại</a>\n");
+      out.write("            <a href=\"");
+      out.print(contextPath);
+      out.write("\">Trang chủ</a>\n");
+      out.write("            <a href=\"");
+      out.print(contextPath);
+      out.write("\">BXH</a>\n");
+      out.write("            <a href=\"");
+      out.print(contextPath);
+      out.write("\">Thể loại</a>\n");
       out.write("        </nav>\n");
       out.write("        <div class=\"search-bar\">\n");
-      out.write("            <input type=\"text\" placeholder=\"Tìm kiếm bài hát, ca sĩ...\">\n");
-      out.write("            <button>Tìm kiếm</button>\n");
+      out.write("            <input id=\"searchInput\" type=\"text\" placeholder=\"Tìm kiếm bài hát, ca sĩ...\">\n");
+      out.write("            <button id=\"searchButton\">Tìm kiếm</button>\n");
       out.write("        </div>\n");
       out.write("        \n");
       out.write("        ");

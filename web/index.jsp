@@ -5,7 +5,14 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="db.User" %>
+<%@page import="DAO.User" %>
+<%@page import="DAO.Song" %>
+
+<% String contextPath = request.getContextPath();%>
+<%
+    LinkedList<SongModel> mostViewSongs = SongModel.getMostViewSongs(9);
+%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,33 +21,75 @@
 
         <%@include file="/WEB-INF/views/header-head.jsp" %>        
         <%@include file="/WEB-INF/views/player-head.jsp" %>
+        <link rel="stylesheet" href="<%=contextPath%>/css/index.css">
+        <script src="<%=contextPath%>/js/home.js" defer></script>
     </head>
     <body>
         <jsp:include page="/WEB-INF/views/header.jsp" />
-        
-        
-        <h1>
-            Danh sach nhac
-            <%
-                User user = (User) request.getSession().getAttribute("user");
-                if (user != null)
-                    out.println(user.username + "!!!");
-            %>
-        </h1>
-        <<h1>Bang xep hang</h1>
-        <table id="ranking-table">
-            <thead>
-                <tr>
-                    <th>Thu hang</th>
-                    <th>Bai hat</th>
-                    <th>Nghe si</th>
-                    <th>Luot nghe</th>
-                </tr>
-            </thead>
-            <tbody>
-            
-            </tbody>
-        </table>
+
+        <div class="home-wrapper">
+            <div class="home-element">
+                <h2>Nhạc nổi bật</h2>
+
+                <div class="music-box">
+                    <% for (int i = 0; i < mostViewSongs.size(); i++) {
+                            Song song = mostViewSongs.get(i).toSong();
+                    %>
+
+                    <div class="music-element">
+                        <img src="<%=contextPath + song.image%>" alt="<%=song.title%>" class="music-image"/>
+
+                        <div class="music-info">
+                            <p class="music-info--title"><%=song.title%></p>
+
+                            <p class="music-info--artist">
+                                <span><%=song.artistName%></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <% }%>
+                </div>
+            </div>
+
+            <div class="home-element">
+                <h2>Playlist đã nghe gần đây</h2>
+
+                <div></div>
+            </div>
+
+            <div class="home-element">
+                <h2>BHX</h2>
+                
+                <div class="slider-container">
+                    <div class="home-slider">
+                        <% for (int i = 0; i < mostViewSongs.size() && i < 5; i++) {
+                                Song song = mostViewSongs.get(i).toSong();
+                        %>
+
+                        <div class="music-element slider-element">
+                            <div class="music-top">
+                                <h2><%=i+1%></h2>
+                            </div>
+                            <img src="<%=contextPath + song.image%>" alt="<%=song.title%>" class="music-image"/>
+
+                            <div class="music-info"><%=song.title%></p>
+
+                                <p class="music-info--title">
+                                <p class="music-info--artist">
+                                    <span><%=song.artistName%></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <% }%>
+                    </div>
+
+                    <button class="prev-btn"><img src="<%=contextPath%>/images/icons/backward-solid.png" alt="Previous"></button>
+                    <button class="next-btn"><img src="<%=contextPath%>/images/icons/forward-solid.png" alt="Next"></button>
+                </div>
+            </div>
+        </div>
 
         <jsp:include page="/WEB-INF/views/player.jsp" />
     </body>
