@@ -264,6 +264,10 @@ public class SongModel extends Model {
   public String getArtistName() {
     return artistName;
   }
+  
+  public void setArtistName(String name) {
+      this.artistName = name;
+  }
 
   private static SongModel readResultSet(ResultSet rs) {
     SongModel song = new SongModel();

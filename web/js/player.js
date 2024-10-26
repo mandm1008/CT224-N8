@@ -3,6 +3,99 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
  */
 
+const YTManager = {
+    YOUTUBE_KEY: "https://www.youtube.com/watch",
+    player: null,
+    iframeId: 'youtube-iframe',
+    videoId: null,
+    onReadyCallback: null,
+    onStateChangeCallback: null,
+
+    checkYoutube(href) {
+        return href.includes(this.YOUTUBE_KEY);
+    },
+
+    detachId(href) {
+        const urlParams = new URLSearchParams(new URL(href).search);
+        const videoId = urlParams.get("v");
+
+        return videoId;
+    },
+
+    init(onReadyCallback = null, onStateChangeCallback = null) {
+        this.onReadyCallback = onReadyCallback;
+        this.onStateChangeCallback = onStateChangeCallback;
+        window.onYouTubeIframeAPIReady = () => this.createPlayer();
+    },
+
+    createPlayer() {
+        this.player = new YT.Player(this.iframeId, {
+            videoId: this.videoId,
+            events: {
+                'onReady': (event) => this.onPlayerReady(event),
+                'onStateChange': (event) => this.onPlayerStateChange(event),
+            }
+        });
+        console.log(this.player);
+    },
+
+    onPlayerReady(event) {
+        if (this.onReadyCallback)
+            this.onReadyCallback(event);
+    },
+
+    onPlayerStateChange(event) {
+        if (this.onStateChangeCallback)
+            this.onStateChangeCallback(event);
+    },
+
+    loadVideo(videoId) {
+        this.videoId = videoId;
+        if (this.player)
+            this.player.loadVideoById(videoId);
+    },
+
+    play() {
+        this.player.playVideo();
+    },
+    pause() {
+        this.player.pauseVideo();
+    },
+    stop() {
+        this.player.stopVideo();
+    },
+    seekTo(seconds, allowSeekAhead = true) {
+        this.player.seekTo(seconds, allowSeekAhead);
+    },
+    setVolume(volumeLevel) {
+        this.player.setVolume(volumeLevel);
+    },
+    mute() {
+        this.player.mute();
+    },
+    unmute() {
+        this.player.unMute();
+    },
+    isMuted() {
+        return this.player.isMuted();
+    },
+
+    getCurrentTime() {
+        return this.player.getCurrentTime();
+    },
+    getDuration() {
+        return this.player.getDuration();
+    },
+    getVideoData() {
+        return this.player.getVideoData();
+    },
+    getPlayerState() {
+        return this.player.getPlayerState();
+    }
+};
+
+YTManager.init();
+
 const playerManager = {
     // data
     data: null,
@@ -46,7 +139,21 @@ const playerManager = {
     },
 
     setMusicData(song) {
-        if (this.audioPlayer) {
+        console.log(song);
+        if (YTManager.checkYoutube(song.href)) {
+            if (this.audioPlayer)
+                this.audioPlayer.pause();
+
+            const videoId = YTManager.detachId(song.href);
+            YTManager.loadVideo(videoId);
+
+            this.songThumbnailElement.src = this.contextPath + song.image;
+            this.songTitleElement.innerText = song.title;
+            this.songArtistElement.innerText = song.artistName;
+        } else {
+            if (YTManager.player)
+                YTManager.stop();
+
             this.audioPlayer.src = this.contextPath + song.href;
             this.audioPlayer.load();
 
@@ -54,20 +161,28 @@ const playerManager = {
             this.songTitleElement.innerText = song.title;
             this.songArtistElement.innerText = song.artistName;
         }
+
+        fetch(this.contextPath + "/api/user/action?type=music&id=" + song.songId);
     },
 
     playMusic() {
-        if (this.audioPlayer) {
+        if (YTManager.checkYoutube(this.songs[this.currentSongIndex].href)) {
+            YTManager.play();
+        } else {
             this.audioPlayer.play();
-            this.isPlaying = true;
-            this.playButton.querySelector('img').src = this.contextPath + '/images/icons/pause-solid.png';
-            console.log('Playing music...');
         }
+        this.isPlaying = true;
+        this.playButton.querySelector('img').src = this.contextPath + '/images/icons/pause-solid.png';
+        console.log('Playing music...');
     },
 
     pauseMusic() {
-        if (this.audioPlayer && this.isPlaying) {
-            this.audioPlayer.pause();
+        if (this.isPlaying) {
+            if (YTManager.checkYoutube(this.songs[this.currentSongIndex].href)) {
+                YTManager.pause();
+            } else {
+                this.audioPlayer.pause();
+            }
             this.isPlaying = false;
             this.playButton.querySelector('img').src = this.contextPath + '/images/icons/play-solid.png';
             console.log('Pausing music...');
@@ -75,11 +190,15 @@ const playerManager = {
     },
 
     restartMusic() {
-        if (this.audioPlayer) {
+        if (YTManager.checkYoutube(this.songs[this.currentSongIndex].href)) {
+            YTManager.seekTo(0);
+            YTManager.play();
+        } else {
             this.audioPlayer.currentTime = 0;
             this.playMusic();
-            console.log('Restarting music...');
         }
+
+        console.log('Restarting music...');
     },
 
     nextMusic() {
@@ -100,6 +219,7 @@ const playerManager = {
         console.log('Playing previous song...');
     },
 
+//////////////////////////////////////////////////
     addEventListeners() {
         if (this.audioPlayer) {
             this.audioPlayer.addEventListener('ended', (() => {
@@ -111,7 +231,19 @@ const playerManager = {
             }).bind(this));
         }
 
-        document.getElementById('playBtn').addEventListener('click', () => {
+        if (YTManager.player) {
+            YTManager.onStateChangeCallback = (event) => {
+                if (event.data === YT.PlayerState.ENDED) {
+                    if (playerManager.isRepeating) {
+                        this.restartMusic();
+                    } else {
+                        this.nextMusic();
+                    }
+                }
+            };
+        }
+
+        this.playButton.addEventListener('click', () => {
             if (this.isPlaying) {
                 this.pauseMusic();
             } else {
@@ -130,40 +262,51 @@ const playerManager = {
         document.getElementById('shuffleBtn').addEventListener('click', () => {
             this.isShuffling = !this.isShuffling;
             console.log('Shuffle mode:', this.isShuffling);
-            if (this.isShuffling) {
-                document.getElementById('shuffleBtn').style = "opacity: 1";
-            } else {
-                document.getElementById('shuffleBtn').style = "opacity: 0.4";
-            }
+            document.getElementById('shuffleBtn').style.opacity = this.isShuffling ? "1" : "0.4";
         });
 
         document.getElementById('repeatBtn').addEventListener('click', () => {
             this.isRepeating = !this.isRepeating;
             console.log('Repeat mode:', this.isRepeating);
-            if (this.isRepeating) {
-                document.getElementById('repeatBtn').style = "opacity: 1";
-            } else {
-                document.getElementById('repeatBtn').style = "opacity: 0.4";
-            }
+            document.getElementById('repeatBtn').style.opacity = this.isRepeating ? "1" : "0.4";
         });
 
-        document.getElementById('progressBar').addEventListener('input', (event) => {
+        const progressBar = document.getElementById('progressBar');
+
+        progressBar.addEventListener('input', (event) => {
             const seekTime = (event.target.value / 100) * this.audioPlayer.duration;
-            this.audioPlayer.currentTime = seekTime;
+            if (YTManager.checkYoutube(this.songs[this.currentSongIndex].href)) {
+                YTManager.seekTo(seekTime);
+            } else {
+                this.audioPlayer.currentTime = seekTime;
+            }
         });
     },
 
     updateTimer() {
         setInterval(() => {
-            if (this.audioPlayer) {
-                const currentTime = this.audioPlayer.currentTime;
-                const duration = this.audioPlayer.duration;
+            if (YTManager.checkYoutube(this.songs[this.currentSongIndex].href)) {
+                if (YTManager.player) {
+                    const currentTime = YTManager.getCurrentTime();
+                    const duration = YTManager.getDuration();
 
-                document.getElementById('currentTime').textContent = this.formatTime(currentTime);
-                document.getElementById('durationTime').textContent = this.formatTime(duration);
+                    document.getElementById('currentTime').textContent = this.formatTime(currentTime);
+                    document.getElementById('durationTime').textContent = this.formatTime(duration);
 
-                const progress = (currentTime / duration) * 100;
-                document.getElementById('progressBar').value = progress || 0;
+                    const progress = (currentTime / duration) * 100;
+                    document.getElementById('progressBar').value = progress || 0;
+                }
+            } else {
+                if (this.audioPlayer) {
+                    const currentTime = this.audioPlayer.currentTime;
+                    const duration = this.audioPlayer.duration;
+
+                    document.getElementById('currentTime').textContent = this.formatTime(currentTime);
+                    document.getElementById('durationTime').textContent = this.formatTime(duration);
+
+                    const progress = (currentTime / duration) * 100;
+                    document.getElementById('progressBar').value = progress || 0;
+                }
             }
         }, 1000);
     },

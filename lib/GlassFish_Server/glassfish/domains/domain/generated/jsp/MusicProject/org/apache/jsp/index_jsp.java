@@ -3,8 +3,10 @@ package org.apache.jsp;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.jsp.*;
+import db.UserMusic;
 import DAO.User;
 import DAO.Song;
+import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -60,10 +62,17 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
  String contextPath = request.getContextPath();
       out.write('\n');
 
+    User user = (User) session.getAttribute("user");
     LinkedList<SongModel> mostViewSongs = SongModel.getMostViewSongs(9);
+    LinkedList<Song> userSongs = null;
+    if (user != null) {
+        UserMusic um = new UserMusic(user.userId);
+        userSongs = um.findByUserId();
+    }
 
       out.write("\n");
       out.write("\n");
@@ -90,6 +99,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
 
     LinkedList<SongModel> list = SongModel.getNewSongs(9);
     HashMap<String, Object> data = new HashMap<>();
@@ -98,22 +108,24 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     data.put("name", "Danh sách phát");
     data.put("userId", -1);
     
-    String json = new Gson().toJson(data);
+    Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
+    String json = gson.toJson(data);
 
       out.write("\n");
       out.write("\n");
       out.write("<link rel=\"stylesheet\" href=\"css/player.css\">\n");
+      out.write("<script src=\"https://www.youtube.com/iframe_api\" defer></script>\n");
       out.write("<script src=\"js/player.js\" defer></script>\n");
       out.write("<script>\n");
       out.write("    const metadata = {\n");
       out.write("        contextPath: '");
       out.print(request.getContextPath());
       out.write("',\n");
-      out.write("        jsonSongs: '");
+      out.write("        jsonSongs: `");
       out.print(json);
-      out.write("'\n");
+      out.write("`\n");
       out.write("    }\n");
-      out.write("</script>");
+      out.write("</script>\n");
       out.write("\n");
       out.write("        <link rel=\"stylesheet\" href=\"");
       out.print(contextPath);
@@ -164,15 +176,51 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </div>\n");
       out.write("            </div>\n");
       out.write("\n");
-      out.write("            <div class=\"home-element\">\n");
-      out.write("                <h2>Playlist đã nghe gần đây</h2>\n");
+      out.write("            ");
+  if (userSongs != null && userSongs.size() > 0) { 
       out.write("\n");
-      out.write("                <div></div>\n");
+      out.write("            <div class=\"home-element\">\n");
+      out.write("                <h2>Đã nghe gần đây</h2>\n");
+      out.write("\n");
+      out.write("                <div class=\"music-box\">\n");
+      out.write("                    ");
+ for (int i = 0; i < userSongs.size(); i++) {
+                            Song song = userSongs.get(i);
+                    
+      out.write("\n");
+      out.write("\n");
+      out.write("                    <div class=\"music-element\">\n");
+      out.write("                        <img src=\"");
+      out.print(contextPath + song.image);
+      out.write("\" alt=\"");
+      out.print(song.title);
+      out.write("\" class=\"music-image\"/>\n");
+      out.write("\n");
+      out.write("                        <div class=\"music-info\">\n");
+      out.write("                            <p class=\"music-info--title\">");
+      out.print(song.title);
+      out.write("</p>\n");
+      out.write("\n");
+      out.write("                            <p class=\"music-info--artist\">\n");
+      out.write("                                <span>");
+      out.print(song.artistName);
+      out.write("</span>\n");
+      out.write("                            </p>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("                    ");
+ }
+      out.write("\n");
+      out.write("                </div>\n");
       out.write("            </div>\n");
+      out.write("            ");
+ } 
+      out.write("\n");
       out.write("\n");
       out.write("            <div class=\"home-element\">\n");
       out.write("                <h2>BHX</h2>\n");
-      out.write("                \n");
+      out.write("\n");
       out.write("                <div class=\"slider-container\">\n");
       out.write("                    <div class=\"home-slider\">\n");
       out.write("                        ");
@@ -184,7 +232,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <div class=\"music-element slider-element\">\n");
       out.write("                            <div class=\"music-top\">\n");
       out.write("                                <h2>");
-      out.print(i+1);
+      out.print(i + 1);
       out.write("</h2>\n");
       out.write("                            </div>\n");
       out.write("                            <img src=\"");

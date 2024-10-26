@@ -4,8 +4,16 @@
         <servlet-name>SignupSevlet</servlet-name>
         <servlet-class>servlet.SignupSevlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserAction</servlet-name>
+        <servlet-class>servlet.UserAction</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SignupSevlet</servlet-name>
         <url-pattern>/api/signup</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserAction</servlet-name>
+        <url-pattern>/api/user/action</url-pattern>
     </servlet-mapping>
 </web-app>

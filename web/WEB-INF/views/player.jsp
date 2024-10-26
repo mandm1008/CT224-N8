@@ -40,5 +40,7 @@
         <input type="range" id="progressBar" value="0" max="100">
         <span id="durationTime">00:00</span>
     </div>
-        
+
+    <div id="youtube-iframe" style="display: none;"></div>
+
 </div>

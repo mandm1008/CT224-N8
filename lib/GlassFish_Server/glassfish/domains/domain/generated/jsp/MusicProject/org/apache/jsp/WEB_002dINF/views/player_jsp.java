@@ -93,7 +93,9 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <input type=\"range\" id=\"progressBar\" value=\"0\" max=\"100\">\n");
       out.write("        <span id=\"durationTime\">00:00</span>\n");
       out.write("    </div>\n");
-      out.write("        \n");
+      out.write("\n");
+      out.write("    <div id=\"youtube-iframe\" style=\"display: none;\"></div>\n");
+      out.write("\n");
       out.write("</div>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

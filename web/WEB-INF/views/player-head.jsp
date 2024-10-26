@@ -4,6 +4,7 @@
     Author     : ASUS
 --%>
 
+<%@page import="com.google.gson.GsonBuilder"%>
 <%@page import="com.google.gson.Gson"%>
 <%@page import="java.util.HashMap"%>
 <%@page import="java.util.LinkedList"%>
@@ -18,7 +19,8 @@
     data.put("name", "Danh sách phát");
     data.put("userId", -1);
     
-    String json = new Gson().toJson(data);
+    Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
+    String json = gson.toJson(data);
 %>
 
 <link rel="stylesheet" href="css/player.css">
@@ -26,6 +28,7 @@
 <script>
     const metadata = {
         contextPath: '<%=request.getContextPath()%>',
-        jsonSongs: '<%=json%>'
+        jsonSongs: `<%=json%>`
     }
 </script>
+<script src="https://www.youtube.com/iframe_api" defer></script>
