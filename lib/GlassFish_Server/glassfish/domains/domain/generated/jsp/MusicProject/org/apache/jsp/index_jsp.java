@@ -114,7 +114,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("<link rel=\"stylesheet\" href=\"css/player.css\">\n");
-      out.write("<script src=\"https://www.youtube.com/iframe_api\" defer></script>\n");
       out.write("<script src=\"js/player.js\" defer></script>\n");
       out.write("<script>\n");
       out.write("    const metadata = {\n");
@@ -126,6 +125,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("`\n");
       out.write("    }\n");
       out.write("</script>\n");
+      out.write("<script src=\"https://www.youtube.com/iframe_api\" defer></script>\n");
       out.write("\n");
       out.write("        <link rel=\"stylesheet\" href=\"");
       out.print(contextPath);

@@ -231,17 +231,15 @@ const playerManager = {
             }).bind(this));
         }
 
-        if (YTManager.player) {
-            YTManager.onStateChangeCallback = (event) => {
-                if (event.data === YT.PlayerState.ENDED) {
-                    if (playerManager.isRepeating) {
-                        this.restartMusic();
-                    } else {
-                        this.nextMusic();
-                    }
+        YTManager.onStateChangeCallback = (event) => {
+            if (event.data === YT.PlayerState.ENDED) {
+                if (playerManager.isRepeating) {
+                    this.restartMusic();
+                } else {
+                    this.nextMusic();
                 }
-            };
-        }
+            }
+        };
 
         this.playButton.addEventListener('click', () => {
             if (this.isPlaying) {
@@ -274,10 +272,11 @@ const playerManager = {
         const progressBar = document.getElementById('progressBar');
 
         progressBar.addEventListener('input', (event) => {
-            const seekTime = (event.target.value / 100) * this.audioPlayer.duration;
             if (YTManager.checkYoutube(this.songs[this.currentSongIndex].href)) {
+                const seekTime = (event.target.value / 100) * YTManager.getDuration();
                 YTManager.seekTo(seekTime);
             } else {
+                const seekTime = (event.target.value / 100) * this.audioPlayer.duration;
                 this.audioPlayer.currentTime = seekTime;
             }
         });
