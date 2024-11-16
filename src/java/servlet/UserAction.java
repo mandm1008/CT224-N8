@@ -6,7 +6,6 @@ package servlet;
 
 import db.UserMusic;
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -44,6 +43,8 @@ public class UserAction extends HttpServlet {
           UserMusic um = new UserMusic(user.userId, Integer.parseInt(id));
           um.insert();
         }
+        
+        response.getOutputStream().print("{}");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

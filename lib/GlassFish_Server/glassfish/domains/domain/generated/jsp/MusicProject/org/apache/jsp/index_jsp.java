@@ -3,14 +3,13 @@ package org.apache.jsp;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.jsp.*;
+import java.util.LinkedList;
+import db.SongModel;
+import com.google.gson.GsonBuilder;
+import com.google.gson.Gson;
 import db.UserMusic;
 import DAO.User;
 import DAO.Song;
-import com.google.gson.GsonBuilder;
-import com.google.gson.Gson;
-import java.util.HashMap;
-import java.util.LinkedList;
-import db.SongModel;
 
 public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -18,12 +17,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
-
-  static {
-    _jspx_dependants = new java.util.ArrayList<String>(2);
-    _jspx_dependants.add("/WEB-INF/views/header-head.jsp");
-    _jspx_dependants.add("/WEB-INF/views/player-head.jsp");
-  }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -63,6 +56,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
  String contextPath = request.getContextPath();
       out.write('\n');
 
@@ -74,6 +71,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         userSongs = um.findByUserId();
     }
 
+    Gson gsonHome = new GsonBuilder().setLenient().create();
+
       out.write("\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
@@ -82,54 +81,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>Enjoy Music - Home</title>\n");
       out.write("\n");
-      out.write("        ");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<link rel=\"stylesheet\" href=\"css/head.css\">\n");
-      out.write("<script src=\"js/head.js\" defer></script>\n");
-      out.write("        \n");
-      out.write("        ");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-
-    LinkedList<SongModel> list = SongModel.getNewSongs(9);
-    HashMap<String, Object> data = new HashMap<>();
-    
-    data.put("songs", list);
-    data.put("name", "Danh sách phát");
-    data.put("userId", -1);
-    
-    Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
-    String json = gson.toJson(data);
-
-      out.write("\n");
-      out.write("\n");
-      out.write("<link rel=\"stylesheet\" href=\"css/player.css\">\n");
-      out.write("<script src=\"js/player.js\" defer></script>\n");
-      out.write("<script>\n");
-      out.write("    const metadata = {\n");
-      out.write("        contextPath: '");
-      out.print(request.getContextPath());
-      out.write("',\n");
-      out.write("        jsonSongs: `");
-      out.print(json);
-      out.write("`\n");
-      out.write("    }\n");
-      out.write("</script>\n");
-      out.write("<script src=\"https://www.youtube.com/iframe_api\" defer></script>\n");
-      out.write("\n");
       out.write("        <link rel=\"stylesheet\" href=\"");
       out.print(contextPath);
-      out.write("/css/index.css\">\n");
+      out.write("/css/song.css\">\n");
       out.write("        <script src=\"");
       out.print(contextPath);
       out.write("/js/home.js\" defer></script>\n");
@@ -147,18 +101,23 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    ");
  for (int i = 0; i < mostViewSongs.size(); i++) {
                             Song song = mostViewSongs.get(i).toSong();
+                            String jsonSong = gsonHome.toJson(song).replaceAll("(?<!\\\\)\"", "&quot;");
                     
       out.write("\n");
       out.write("\n");
       out.write("                    <div class=\"music-element\">\n");
       out.write("                        <img src=\"");
-      out.print(contextPath + song.image);
+      out.print(song.image);
       out.write("\" alt=\"");
       out.print(song.title);
       out.write("\" class=\"music-image\"/>\n");
       out.write("\n");
       out.write("                        <div class=\"music-info\">\n");
-      out.write("                            <p class=\"music-info--title\">");
+      out.write("                            <p class=\"music-info--title\" onclick=\"window.location = '");
+      out.print(contextPath);
+      out.write("/songs.jsp?id=");
+      out.print(song.songId);
+      out.write("'\">");
       out.print(song.title);
       out.write("</p>\n");
       out.write("\n");
@@ -167,6 +126,54 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print(song.artistName);
       out.write("</span>\n");
       out.write("                            </p>\n");
+      out.write("                        </div>\n");
+      out.write("\n");
+      out.write("                        <button class=\"music-menu--icon\">\n");
+      out.write("                            <img src=\"");
+      out.print(contextPath);
+      out.write("/images/icons/ellipsis-vertical-solid.png\" alt=\"Menu\" />\n");
+      out.write("                        </button>\n");
+      out.write("\n");
+      out.write("                        <div class=\"music-menu\">\n");
+      out.write("                            <div class=\"music-menu--title\" onclick=\"window.location = '");
+      out.print(contextPath);
+      out.write("/songs.jsp?id=");
+      out.print(song.songId);
+      out.write("'\">");
+      out.print(song.title);
+      out.write("</div>\n");
+      out.write("                            <div class=\"music-menu--button\" onclick=\"playerManager.playNowSong('");
+      out.print(jsonSong);
+      out.write("')\">\n");
+      out.write("                                <img src=\"");
+      out.print(contextPath);
+      out.write("/images/icons/play-solid.png\" alt=\"Play\" />\n");
+      out.write("                                <span>Phát ngay</span>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"music-menu--button\" onclick=\"playerManager.addToPlaylist('");
+      out.print(jsonSong);
+      out.write("')\">\n");
+      out.write("                                <img src=\"");
+      out.print(contextPath);
+      out.write("/images/icons/square-plus-solid.png\" alt=\"Add\" />\n");
+      out.write("                                <span>Thêm vào danh sách phát</span>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"music-menu--button\" onclick=\"playerManager.downloadSong(`");
+      out.print(song.href);
+      out.write("`)\">\n");
+      out.write("                                <img src=\"");
+      out.print(contextPath);
+      out.write("/images/icons/download-solid.png\" alt=\"Download\" />\n");
+      out.write("                                <span>Tải xuống</span>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"music-menu--button\" onclick=\"playerManager.shareSong(`");
+      out.print(song.songId);
+      out.write("`)\">\n");
+      out.write("                                <img src=\"");
+      out.print(contextPath);
+      out.write("/images/icons/share-from-square-regular.png\" alt=\"Share\" />\n");
+      out.write("                                <span>Chia sẻ</span>\n");
+      out.write("                            </div>\n");
       out.write("                        </div>\n");
       out.write("                    </div>\n");
       out.write("\n");
@@ -191,13 +198,17 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("                    <div class=\"music-element\">\n");
       out.write("                        <img src=\"");
-      out.print(contextPath + song.image);
+      out.print(song.image);
       out.write("\" alt=\"");
       out.print(song.title);
       out.write("\" class=\"music-image\"/>\n");
       out.write("\n");
       out.write("                        <div class=\"music-info\">\n");
-      out.write("                            <p class=\"music-info--title\">");
+      out.write("                            <p class=\"music-info--title\" onclick=\"window.location = '");
+      out.print(contextPath);
+      out.write("/songs.jsp?id=");
+      out.print(song.songId);
+      out.write("'\">");
       out.print(song.title);
       out.write("</p>\n");
       out.write("\n");
@@ -236,16 +247,21 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</h2>\n");
       out.write("                            </div>\n");
       out.write("                            <img src=\"");
-      out.print(contextPath + song.image);
+      out.print(song.image);
       out.write("\" alt=\"");
       out.print(song.title);
       out.write("\" class=\"music-image\"/>\n");
       out.write("\n");
-      out.write("                            <div class=\"music-info\">");
+      out.write("                            <div class=\"music-info\">\n");
+      out.write("                                <p class=\"music-info--title\" onclick=\"window.location = '");
+      out.print(contextPath);
+      out.write("/songs.jsp?id=");
+      out.print(song.songId);
+      out.write("'\">\n");
+      out.write("                                    ");
       out.print(song.title);
-      out.write("</p>\n");
       out.write("\n");
-      out.write("                                <p class=\"music-info--title\">\n");
+      out.write("                                </p>\n");
       out.write("                                <p class=\"music-info--artist\">\n");
       out.write("                                    <span>");
       out.print(song.artistName);

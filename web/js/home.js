@@ -43,3 +43,28 @@ const sliderTop = {
 
 sliderTop.init(document.querySelector(".home-slider"));
 sliderTop.updateSlider();
+
+window.setInterval(() => {
+    sliderTop.index = (sliderTop.index + 1) % sliderTop.total;
+    sliderTop.updateSlider();
+}, 5000);
+
+const musicElements = document.querySelectorAll(".music-element");
+
+musicElements.forEach((musicElement) => {
+    const menuButton = musicElement.querySelector(".music-menu--icon");
+    const menuMusic = musicElement.querySelector(".music-menu");
+    
+    menuButton.onclick = (e) => {
+        menuMusic.classList.toggle("active");
+        e.stopPropagation();
+    };
+    
+    menuMusic.onclick = (e) => {
+       e.stopPropagation();
+    };
+    
+    window.addEventListener("click", (e) => {
+       menuMusic.classList.remove("active"); 
+    });
+});

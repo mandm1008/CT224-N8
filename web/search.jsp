@@ -22,11 +22,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Enjoy Music - Home</title>
-
-        <%@include file="/WEB-INF/views/header-head.jsp" %>        
-        <%@include file="/WEB-INF/views/player-head.jsp" %>
-
         <link href="css/search.css" rel="stylesheet" />
+        <link href="css/song.css" rel="stylesheet" />
     </head>
     <body>
         <jsp:include page="/WEB-INF/views/header.jsp" />

@@ -41,6 +41,7 @@ public class ConnectDB {
       conn.createStatement().execute(SongModel.getCreateTable());
       conn.createStatement().execute(UserLikes.getCreateTable());
       conn.createStatement().execute(PlaylistSongModel.getCreateTable());
+      conn.createStatement().execute(UserMusic.getCreateTable());
 
       return true;
     } catch (SQLException e) {
@@ -90,44 +91,44 @@ public class ConnectDB {
     // default songs
     SongModel song1 = new SongModel(
         "Áng mây vô tình",
-        "/uploads/audio/angmayvotinh.mp3",
-        "/uploads/images/angmayvotinh.jpg");
+        "/MusicProject/uploads/audio/angmayvotinh.mp3",
+        "/MusicProject/uploads/images/angmayvotinh.jpg");
     song1.insert("Lương Gia Hùng");
 
     SongModel song2 = new SongModel(
         "Cho Mình Em",
-        "/uploads/audio/chominhem.mp3",
-        "/uploads/images/chominhem.jpg");
+        "/MusicProject/uploads/audio/chominhem.mp3",
+        "/MusicProject/uploads/images/chominhem.jpg");
     song2.insert("Binz");
 
     SongModel song3 = new SongModel(
         "Trốn tìm",
-        "/uploads/audio/trontim.mp3",
-        "/uploads/images/trontim.jpg");
+        "/MusicProject/uploads/audio/trontim.mp3",
+        "/MusicProject/uploads/images/trontim.jpg");
     song3.insert("Đen Vâu");
 
     SongModel song4 = new SongModel(
         "Đường tôi chở em về",
-        "/uploads/audio/duongtoichoemve.mp3",
-        "/uploads/images/duongtoichoemve.jpg");
+        "/MusicProject/uploads/audio/duongtoichoemve.mp3",
+        "/MusicProject/uploads/images/duongtoichoemve.jpg");
     song4.insert("Buitruonglinh");
 
     SongModel song5 = new SongModel(
         "Cho tôi lang thang",
-        "/uploads/audio/chotoilangthang.mp3",
-        "/uploads/images/chotoilangthang.jpg");
+        "/MusicProject/uploads/audio/chotoilangthang.mp3",
+        "/MusicProject/uploads/images/chotoilangthang.jpg");
     song5.insert("Đen Vâu");
 
     SongModel song6 = new SongModel(
         "Người lạ ơi",
-        "/uploads/audio/nguoilaoi.mp3",
-        "/uploads/images/nguoilaoi.jpg");
+        "/MusicProject/uploads/audio/nguoilaoi.mp3",
+        "/MusicProject/uploads/images/nguoilaoi.jpg");
     song6.insert("Karik");
 
     SongModel song7 = new SongModel(
         "Người thứ ba",
-        "/uploads/audio/nguoithuba.mp3",
-        "/uploads/images/nguoithu3a.jpg");
+        "/MusicProject/uploads/audio/nguoithuba.mp3",
+        "/MusicProject/uploads/images/nguoithu3a.jpg");
     song7.insert("H2K");
 
     System.out.println("Init data for Songs");

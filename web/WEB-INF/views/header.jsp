@@ -13,6 +13,7 @@
 <script>
     var contextPath = "<%=contextPath%>";
 </script>
+<script src="js/head.js" defer></script>
 
 <header class="header">
     <div class="container">

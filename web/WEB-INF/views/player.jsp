@@ -4,9 +4,28 @@
     Author     : ASUS
 --%>
 
+<%@page import="com.google.gson.GsonBuilder"%>
+<%@page import="com.google.gson.Gson"%>
+<%@page import="java.util.HashMap"%>
+<%@page import="java.util.LinkedList"%>
+<%@page import="db.SongModel" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+<%
+    LinkedList<SongModel> list = SongModel.getNewSongs(9);
+    HashMap<String, Object> data = new HashMap<>();
+
+    data.put("songs", list);
+    data.put("name", "Danh sách phát");
+    data.put("userId", -1);
+
+    Gson gson = new GsonBuilder().setLenient().disableHtmlEscaping().create();
+    String json = gson.toJson(data);
+%>
+
 <% String contextPath = request.getContextPath();%>
+
+<script src="https://www.youtube.com/iframe_api"></script>
 
 <div class="music-player">
     <div class="player-info">
@@ -15,7 +34,7 @@
             <span class="song-title">Song Name</span>
             <span class="song-artist">Artist Name</span>
         </div>
-    </div>
+    </div> 
 
     <div class="player-controls">
         <button id="shuffleBtn" class="control-btn" style="opacity: 0.4">
@@ -44,3 +63,15 @@
     <div id="youtube-iframe" style="display: none;"></div>
 
 </div>
+
+<script src="js/player.js"></script>
+<script defer>
+    const metadata = {
+        contextPath: '<%=request.getContextPath()%>',
+        jsonSongs: `<%=json%>`
+    };
+    const playerManager = new PlayerManager();
+
+    playerManager.setContextPath(metadata.contextPath);
+    playerManager.getDataFromJson(metadata.jsonSongs);
+</script>

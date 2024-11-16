@@ -58,6 +58,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print(contextPath);
       out.write("\";\n");
       out.write("</script>\n");
+      out.write("<script src=\"js/head.js\" defer></script>\n");
       out.write("\n");
       out.write("<header class=\"header\">\n");
       out.write("    <div class=\"container\">\n");
