@@ -15501,3 +15501,2212 @@ Caused by: java.io.IOException: An established connection was aborted by the sof
 [2024-11-12T12:59:54.047+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=2106 _ThreadName=Thread-7] [timeMillis: 1731391194047] [levelValue: 800] [[
   JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
 
+[2024-11-19T19:26:33.241+0700] [glassfish 6.2] [INFO] [NCLS-LOGGING-00009] [jakarta.enterprise.logging] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1732019193025] [timeMillis: 1732019193241] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish  6.2.5  (build 6.x-b66-g0159b68 2022-02-12T17:39:59+0000)]]
+
+[2024-11-19T19:26:33.242+0700] [glassfish 6.2] [INFO] [NCLS-LOGGING-00010] [jakarta.enterprise.logging] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1732019193025] [timeMillis: 1732019193242] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2024-11-19T19:26:33.403+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019193403] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-11-19T19:26:33.405+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019193405] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-11-19T19:26:33.413+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019193413] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2024-11-19T19:26:33.615+0700] [glassfish 6.2] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019193615] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2024-11-19T19:26:33.974+0700] [glassfish 6.2] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732019193024] [timeMillis: 1732019193974] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2024-11-19T19:26:34.264+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019194264] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 109ms - bound to [/0.0.0.0:8080]]]
+
+[2024-11-19T19:26:34.309+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019194309] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 4ms - bound to [/0.0.0.0:8181]]]
+
+[2024-11-19T19:26:34.328+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019194328] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 13ms - bound to [/0.0.0.0:4848]]]
+
+[2024-11-19T19:26:34.541+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1732019193025] [timeMillis: 1732019194541] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 76ms - bound to [/0.0.0.0:3700]]]
+
+[2024-11-19T19:26:35.024+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019195024] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:35.755+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01002] [jakarta.enterprise.system.core.security] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019195755] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2024-11-19T19:26:35.757+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01010] [jakarta.enterprise.system.core.security] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019195757] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2024-11-19T19:26:35.776+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01143] [jakarta.enterprise.system.core.security] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019195776] [levelValue: 800] [[
+  Loading policy provider org.glassfish.exousia.modules.locked.SimplePolicyProvider.]]
+
+[2024-11-19T19:26:35.843+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01011] [jakarta.enterprise.system.core.security] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019195843] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2024-11-19T19:26:36.144+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019196144] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2024-11-19T19:26:36.149+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019196149] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2024-11-19T19:26:36.153+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019196153] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2024-11-19T19:26:36.184+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019196184] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2024-11-19T19:26:36.187+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019196187] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2024-11-19T19:26:36.419+0700] [glassfish 6.2] [INFO] [AS-WEB-CORE-00306] [jakarta.enterprise.web.core] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019196419] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2024-11-19T19:26:36.420+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019196420] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2024-11-19T19:26:37.355+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019197355] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:37.408+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019197408] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:37.409+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019197409] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:37.411+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019197411] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:37.414+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019197414] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:37.558+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019197558] [levelValue: 900] [[
+  The web application [unknown] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-19T19:26:37.799+0700] [glassfish 6.2] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732019197799] [levelValue: 800] [[
+  HV000001: Hibernate Validator 7.0.2.Final]]
+
+[2024-11-19T19:26:37.809+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019197809] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-19T19:26:37.813+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732019193032] [timeMillis: 1732019197813] [levelValue: 800] [[
+  Loading application MusicProject done in 3.885 ms]]
+
+[2024-11-19T19:26:37.815+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1732019197815] [levelValue: 800] [[
+  Eclipse GlassFish  6.2.5  (6.x-b66-g0159b68 2022-02-12T17:39:59+0000) startup time : Felix (5.648ms), startup services(4.796ms), total(10.444ms)]]
+
+[2024-11-19T19:26:37.970+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732019193024] [timeMillis: 1732019197970] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 12ms - bound to [/0.0.0.0:7676]]]
+
+[2024-11-19T19:26:38.031+0700] [glassfish 6.2] [INFO] [NCLS-BOOTSTRAP-00027] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1732019198031] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@648ee871 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@375b5b7f.]]
+
+[2024-11-19T19:26:38.215+0700] [glassfish 6.2] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=85 _ThreadName=Thread-17] [timeMillis: 1732019198215] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://DESKTOP-044DVI5:8686/jndi/rmi://DESKTOP-044DVI5:8686/jmxrmi]]
+
+[2024-11-19T19:26:38.291+0700] [glassfish 6.2] [INFO] [] [org.jvnet.hk2.osgiadapter] [tid: _ThreadID=23 _ThreadName=FelixStartLevel] [timeMillis: 1732019198291] [levelValue: 800] [[
+  Skipping registration of inhabitant for service reference [org.osgi.service.metatype.MetaTypeProvider] as the service object could not be obtained.]]
+
+[2024-11-19T19:26:39.269+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=128 _ThreadName=Thread-29] [timeMillis: 1732019199269] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:40.039+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=128 _ThreadName=Thread-29] [timeMillis: 1732019200039] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:40.062+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=128 _ThreadName=Thread-29] [timeMillis: 1732019200062] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:40.063+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=128 _ThreadName=Thread-29] [timeMillis: 1732019200063] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:41.387+0700] [glassfish 6.2] [INFO] [jsf.config.listener.version] [jakarta.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=128 _ThreadName=Thread-29] [timeMillis: 1732019201387] [levelValue: 800] [[
+  Initializing Mojarra 3.0.1 for context '']]
+
+[2024-11-19T19:26:42.109+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=119 _ThreadName=pool-24-thread-1] [timeMillis: 1732019202109] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2024-11-19T19:26:42.455+0700] [glassfish 6.2] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019202455] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2024-11-19T19:26:42.929+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=128 _ThreadName=Thread-29] [timeMillis: 1732019202929] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2024-11-19T19:26:42.931+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=128 _ThreadName=Thread-29] [timeMillis: 1732019202931] [levelValue: 800] [[
+  Loading application __admingui done in 4.414 ms]]
+
+[2024-11-19T19:26:42.943+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=119 _ThreadName=pool-24-thread-1] [timeMillis: 1732019202943] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 9ms - bound to [/0.0.0.0:8181]]]
+
+[2024-11-19T19:26:43.070+0700] [glassfish 6.2] [WARNING] [] [javax.enterprise.system.container.web.com.sun.web.security] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732019203070] [levelValue: 900] [[
+  Context path from ServletContext:  differs from path from bundle: /]]
+
+[2024-11-19T19:26:45.967+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=120 _ThreadName=pool-25-thread-1] [timeMillis: 1732019205967] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2024-11-19T19:26:45.976+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=120 _ThreadName=pool-25-thread-1] [timeMillis: 1732019205976] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 3ms - bound to [/0.0.0.0:8080]]]
+
+[2024-11-19T19:26:48.847+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019208847] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:49.158+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019209158] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:49.171+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019209171] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:49.172+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019209172] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:49.173+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019209173] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:49.175+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019209175] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:26:49.344+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019209344] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-19T19:26:49.384+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732019209384] [levelValue: 800] [[
+  MusicProject was successfully deployed in 1.880 milliseconds.]]
+
+[2024-11-19T19:51:28.452+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732020688452] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T19:51:32.047+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=148 _ThreadName=http-listener-1(5)] [timeMillis: 1732020692047] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T19:52:59.532+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=146 _ThreadName=Thread-7] [timeMillis: 1732020779532] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T19:53:04.880+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=147 _ThreadName=http-listener-1(4)] [timeMillis: 1732020784880] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T19:53:12.047+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=148 _ThreadName=http-listener-1(5)] [timeMillis: 1732020792047] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:145)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:67)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.processAsync(AbstractNIOAsyncQueueWriter.java:285)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:92)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:73)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:66)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:381)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:353)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:319)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:248)
+	... 3 more
+]]
+
+[2024-11-19T19:53:55.451+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732020835451] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-19T19:54:24.463+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732020864463] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:54:25.867+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732020865867] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:54:26.000+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732020866000] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:54:26.007+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732020866007] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:54:26.010+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732020866010] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:54:26.016+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732020866016] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T19:54:26.791+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732020866791] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-19T19:54:26.931+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732020866931] [levelValue: 800] [[
+  MusicProject was successfully deployed in 4.519 milliseconds.]]
+
+[2024-11-19T19:55:03.812+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732020903812] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T19:55:05.529+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=146 _ThreadName=http-listener-1(3)] [timeMillis: 1732020905529] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T20:08:38.014+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732021718014] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T20:08:44.268+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=148 _ThreadName=http-listener-1(5)] [timeMillis: 1732021724268] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection closed
+	at org.glassfish.grizzly.asyncqueue.TaskQueue.onClose(TaskQueue.java:299)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.onClose(AbstractNIOAsyncQueueWriter.java:415)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.closeConnection(TCPNIOTransport.java:379)
+	at org.glassfish.grizzly.nio.NIOConnection.doClose(NIOConnection.java:599)
+	at org.glassfish.grizzly.nio.NIOConnection$6.run(NIOConnection.java:566)
+	at org.glassfish.grizzly.nio.DefaultSelectorHandler.execute(DefaultSelectorHandler.java:190)
+	at org.glassfish.grizzly.nio.NIOConnection.terminate0(NIOConnection.java:561)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.terminate0(TCPNIOConnection.java:249)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:151)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:67)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.processAsync(AbstractNIOAsyncQueueWriter.java:285)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:92)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:73)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:66)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:381)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:353)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:319)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:248)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:145)
+	... 16 more
+]]
+
+[2024-11-19T20:17:22.192+0700] [glassfish 6.2] [SEVERE] [] [org.apache.jasper.compiler.Compiler] [tid: _ThreadID=146 _ThreadName=http-listener-1(3)] [timeMillis: 1732022242192] [levelValue: 1000] [[
+  Error compiling file: D:\Workspace\NetBeans\MusicProject\lib\GlassFish_Server\glassfish\domains\domain\generated\jsp\MusicProject\org\apache\jsp\index_jsp.java]]
+
+[2024-11-19T20:17:22.480+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=146 _ThreadName=http-listener-1(3)] [timeMillis: 1732022242480] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6197: An error occurred at line: 168 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   variable data
+  location: class org.apache.jsp.index_jsp
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:89)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:247)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:332)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:387)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:561)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:288)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:355)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:284)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]
+
+[2024-11-19T20:23:44.948+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732022624948] [levelValue: 800] [[
+  2]]
+
+[2024-11-19T20:23:46.864+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=144 _ThreadName=http-listener-1(1)] [timeMillis: 1732022626864] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T20:24:11.669+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=145 _ThreadName=Thread-7] [timeMillis: 1732022651669] [levelValue: 800] [[
+  4]]
+
+[2024-11-19T20:24:12.030+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=148 _ThreadName=http-listener-1(5)] [timeMillis: 1732022652030] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T20:24:49.090+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732022689090] [levelValue: 800] [[
+  5]]
+
+[2024-11-19T20:32:59.828+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732023179828] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T20:33:04.624+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=147 _ThreadName=http-listener-1(4)] [timeMillis: 1732023184624] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T20:34:39.368+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732023279368] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T20:40:55.336+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732023655336] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T20:40:58.132+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=145 _ThreadName=http-listener-1(2)] [timeMillis: 1732023658132] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T20:41:12.437+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732023672437] [levelValue: 800] [[
+  2]]
+
+[2024-11-19T20:41:14.025+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=147 _ThreadName=http-listener-1(4)] [timeMillis: 1732023674025] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T20:41:42.491+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732023702491] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T20:47:36.689+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024056689] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-19T20:47:43.886+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024063886] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T20:47:46.083+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024066083] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T20:47:46.218+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024066218] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T20:47:46.221+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024066221] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T20:47:46.222+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024066222] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T20:47:46.225+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024066225] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T20:47:47.192+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024067192] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-19T20:47:47.433+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732024067433] [levelValue: 800] [[
+  MusicProject was successfully deployed in 13.980 milliseconds.]]
+
+[2024-11-19T20:48:56.199+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732024136199] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T20:54:06.034+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732024446034] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T20:54:09.221+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=146 _ThreadName=http-listener-1(3)] [timeMillis: 1732024449221] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T20:54:09.789+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=148 _ThreadName=http-listener-1(5)] [timeMillis: 1732024449789] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:145)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:67)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.processAsync(AbstractNIOAsyncQueueWriter.java:285)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:92)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:73)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:66)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:381)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:353)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:319)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:248)
+	... 3 more
+]]
+
+[2024-11-19T20:54:23.499+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732024463499] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:01:44.199+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732024904199] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:02:42.523+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732024962523] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:03:42.710+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732025022710] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:06:20.237+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732025180237] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:06:47.132+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=146 _ThreadName=Thread-7] [timeMillis: 1732025207132] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:11:27.129+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732025487129] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:12:05.642+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=145 _ThreadName=Thread-7] [timeMillis: 1732025525642] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:15:12.450+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=145 _ThreadName=Thread-7] [timeMillis: 1732025712450] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T21:15:15.410+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=146 _ThreadName=http-listener-1(3)] [timeMillis: 1732025715410] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T21:15:18.019+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732025718019] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:15:34.639+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=146 _ThreadName=Thread-7] [timeMillis: 1732025734639] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:15:59.011+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=145 _ThreadName=Thread-7] [timeMillis: 1732025759011] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T21:16:01.461+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=146 _ThreadName=http-listener-1(3)] [timeMillis: 1732025761461] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T21:16:01.461+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=148 _ThreadName=http-listener-1(5)] [timeMillis: 1732025761461] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T21:16:07.116+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=145 _ThreadName=Thread-7] [timeMillis: 1732025767116] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:20:28.147+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732026028147] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:20:43.666+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732026043666] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:21:39.259+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732026099259] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:22:05.977+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=146 _ThreadName=Thread-7] [timeMillis: 1732026125977] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T21:22:08.463+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=148 _ThreadName=http-listener-1(5)] [timeMillis: 1732026128463] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T21:22:08.521+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=144 _ThreadName=http-listener-1(1)] [timeMillis: 1732026128521] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T21:22:10.381+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732026130381] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:23:42.693+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732026222693] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:23:55.105+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732026235105] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:24:20.001+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732026260001] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:24:28.679+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732026268679] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:24:35.209+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732026275209] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T21:24:37.501+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=146 _ThreadName=http-listener-1(3)] [timeMillis: 1732026277501] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T21:25:01.128+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732026301128] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T21:25:04.038+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=144 _ThreadName=http-listener-1(1)] [timeMillis: 1732026304038] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T21:25:38.316+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732026338316] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T21:26:10.515+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=146 _ThreadName=Thread-7] [timeMillis: 1732026370515] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T21:26:27.758+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732026387758] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:26:41.514+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=146 _ThreadName=Thread-7] [timeMillis: 1732026401514] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:27:58.026+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=145 _ThreadName=Thread-7] [timeMillis: 1732026478026] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:28:21.654+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732026501654] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-19T21:29:00.763+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732026540763] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T21:29:03.543+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732026543543] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T21:29:03.684+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732026543684] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T21:29:03.692+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732026543692] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T21:29:03.695+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732026543695] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T21:29:03.697+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732026543697] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T21:29:04.971+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732026544971] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-19T21:29:05.267+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732026545267] [levelValue: 800] [[
+  MusicProject was successfully deployed in 6.027 milliseconds.]]
+
+[2024-11-19T21:30:03.672+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732026603672] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T21:30:11.457+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=145 _ThreadName=Thread-7] [timeMillis: 1732026611457] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T21:59:45.334+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732028385334] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-19T22:00:15.881+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732028415881] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:00:17.138+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732028417138] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:00:17.238+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732028417238] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:00:17.239+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732028417239] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:00:17.241+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732028417241] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:00:17.244+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732028417244] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:00:18.045+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732028418045] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-19T22:00:18.326+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=55 _ThreadName=admin-listener(5)] [timeMillis: 1732028418326] [levelValue: 800] [[
+  MusicProject was successfully deployed in 3.972 milliseconds.]]
+
+[2024-11-19T22:01:21.078+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732028481078] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T22:04:34.622+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732028674622] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T22:04:50.663+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=51 _ThreadName=admin-listener(1)] [timeMillis: 1732028690663] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-19T22:05:12.184+0700] [glassfish 6.2] [SEVERE] [] [org.apache.jasper.servlet.JspServlet] [tid: _ThreadID=145 _ThreadName=http-listener-1(2)] [timeMillis: 1732028712184] [levelValue: 1000] [[
+  PWC6117: File "null" not found]]
+
+[2024-11-19T22:05:21.086+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732028721086] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:05:22.077+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732028722077] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:05:22.269+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732028722269] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:05:22.271+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732028722271] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:05:22.272+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732028722272] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:05:22.274+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732028722274] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:05:23.144+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732028723144] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-19T22:05:23.336+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-listener(2)] [timeMillis: 1732028723336] [levelValue: 800] [[
+  MusicProject was successfully deployed in 3.659 milliseconds.]]
+
+[2024-11-19T22:05:48.397+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=146 _ThreadName=Thread-7] [timeMillis: 1732028748397] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T22:07:36.584+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=146 _ThreadName=Thread-7] [timeMillis: 1732028856584] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T22:08:51.046+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=145 _ThreadName=Thread-7] [timeMillis: 1732028931046] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T22:09:04.635+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=54 _ThreadName=admin-listener(4)] [timeMillis: 1732028944635] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-19T22:09:39.332+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732028979332] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:09:40.231+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732028980231] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:09:40.448+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732028980448] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:09:40.451+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732028980451] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:09:40.453+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732028980453] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:09:40.455+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732028980455] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-19T22:09:41.515+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732028981515] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-19T22:09:41.769+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-listener(3)] [timeMillis: 1732028981769] [levelValue: 800] [[
+  MusicProject was successfully deployed in 4.047 milliseconds.]]
+
+[2024-11-19T22:10:17.411+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732029017411] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T22:10:23.412+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732029023412] [levelValue: 800] [[
+  1]]
+
+[2024-11-19T22:10:23.745+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=147 _ThreadName=http-listener-1(4)] [timeMillis: 1732029023745] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T22:10:26.267+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732029026267] [levelValue: 800] [[
+  7]]
+
+[2024-11-19T22:10:26.623+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=148 _ThreadName=http-listener-1(5)] [timeMillis: 1732029026623] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T22:10:30.199+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=144 _ThreadName=Thread-7] [timeMillis: 1732029030199] [levelValue: 800] [[
+  2]]
+
+[2024-11-19T22:10:30.458+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=144 _ThreadName=http-listener-1(1)] [timeMillis: 1732029030458] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T22:10:30.465+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=146 _ThreadName=http-listener-1(3)] [timeMillis: 1732029030465] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection is closed
+	at org.glassfish.grizzly.nio.NIOConnection.assertOpen(NIOConnection.java:412)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:613)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.writeCompositeBuffer(TCPNIOUtils.java:63)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:96)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:77)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:211)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:137)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.write(AbstractNIOAsyncQueueWriter.java:47)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransportFilter.handleWrite(TCPNIOTransportFilter.java:106)
+	at org.glassfish.grizzly.filterchain.TransportFilter.handleWrite(TransportFilter.java:148)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$8.execute(ExecutorResolver.java:81)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:750)
+	at org.glassfish.grizzly.filterchain.FilterChainContext.write(FilterChainContext.java:728)
+	at org.glassfish.grizzly.http.io.OutputBuffer.flushBuffer(OutputBuffer.java:1004)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:644)
+	... 37 more
+]]
+
+[2024-11-19T22:10:34.290+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=148 _ThreadName=Thread-7] [timeMillis: 1732029034290] [levelValue: 800] [[
+  2]]
+
+[2024-11-19T22:10:37.973+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-7] [timeMillis: 1732029037973] [levelValue: 800] [[
+  8]]
+
+[2024-11-19T22:11:44.358+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00092] [jakarta.enterprise.system.core] [tid: _ThreadID=3374 _ThreadName=Thread-40] [timeMillis: 1732029104358] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2024-11-19T22:11:45.261+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00092] [jakarta.enterprise.system.core] [tid: _ThreadID=3375 _ThreadName=Thread-41] [timeMillis: 1732029105261] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2024-11-19T22:11:45.327+0700] [glassfish 6.2] [WARNING] [NCLS-BOOTSTRAP-00029] [jakarta.enterprise.bootstrap] [tid: _ThreadID=3375 _ThreadName=Thread-41] [timeMillis: 1732029105327] [levelValue: 900] [[
+  Exception while unregistering: 
+java.lang.IllegalStateException: Service already unregistered.
+	at org.apache.felix.framework.ServiceRegistrationImpl.unregister(ServiceRegistrationImpl.java:142)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl.unregisterService(EmbeddedOSGiGlassFishImpl.java:68)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl.stop(EmbeddedOSGiGlassFishImpl.java:56)
+	at com.sun.enterprise.v3.admin.StopServer.doExecute(StopServer.java:55)
+	at com.sun.enterprise.v3.admin.StopDomainCommand.execute(StopDomainCommand.java:73)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:516)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:512)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:511)
+	at org.glassfish.api.AsyncImpl$1$1.run(AsyncImpl.java:52)
+]]
+
+[2024-11-19T22:11:45.629+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=3375 _ThreadName=Thread-7] [timeMillis: 1732029105629] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2024-11-19T22:11:45.826+0700] [glassfish 6.2] [INFO] [NCLS-BOOTSTRAP-00028] [jakarta.enterprise.bootstrap] [tid: _ThreadID=3374 _ThreadName=Thread-40] [timeMillis: 1732029105826] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@648ee871 from service registry.]]
+
+[2024-11-19T22:11:46.146+0700] [glassfish 6.2] [INFO] [NCLS-JMX-00002] [jakarta.enterprise.system.jmx] [tid: _ThreadID=3375 _ThreadName=Thread-41] [timeMillis: 1732029106146] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2024-11-19T22:11:46.161+0700] [glassfish 6.2] [INFO] [NCLS-JMX-00001] [jakarta.enterprise.system.jmx] [tid: _ThreadID=3375 _ThreadName=Thread-41] [timeMillis: 1732029106161] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2024-11-19T22:11:46.637+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=3378 _ThreadName=RunLevelControllerThread-1732029106411] [timeMillis: 1732029106637] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-19T22:11:47.319+0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=3378 _ThreadName=RunLevelControllerThread-1732029106411] [timeMillis: 1732029107319] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@25633a70]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@5e73429e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2024-11-19T22:11:47.320+0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=3378 _ThreadName=RunLevelControllerThread-1732029106411] [timeMillis: 1732029107320] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@25633a70]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@5e73429e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2024-11-19T22:11:47.320+0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=3378 _ThreadName=RunLevelControllerThread-1732029106411] [timeMillis: 1732029107320] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@25633a70]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@5e73429e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2024-11-19T22:11:47.322+0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=3378 _ThreadName=RunLevelControllerThread-1732029106411] [timeMillis: 1732029107322] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@25633a70]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@5e73429e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2024-11-19T22:11:47.323+0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=3378 _ThreadName=RunLevelControllerThread-1732029106411] [timeMillis: 1732029107323] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@25633a70]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@5e73429e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2024-11-19T22:11:48.227+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=3379 _ThreadName=Thread-7] [timeMillis: 1732029108227] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+

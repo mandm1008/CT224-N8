@@ -9,7 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #1DB954 0%, #121212 100%);
+    background: #fff;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -18,7 +18,7 @@ body {
 }
 
 .music-login-container {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #000;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);

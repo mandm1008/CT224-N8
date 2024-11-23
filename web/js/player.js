@@ -12,6 +12,7 @@ class YoutubeManager {
         this.onReady = [];
         this.onStateChange = [];
         this.videoData = null;
+        this.localYoutubeData = {};
 
         this.init();
     }
@@ -28,6 +29,9 @@ class YoutubeManager {
     }
 
     async fetchYouTubeData(videoId) {
+        if (typeof this.localYoutubeData[videoId] !== "undefined") {
+            return this.localYoutubeData[videoId];
+        }
         const url = `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=AIzaSyBPjNeE5gLTC6hyFy9DWH7BxHohVHQhZi4&part=snippet`;
 
         const response = await fetch(url);
@@ -38,9 +42,7 @@ class YoutubeManager {
 
         if (data.items && data.items.length > 0) {
             const videoData = data.items[0];
-            console.log('Title:', videoData.snippet.title);
-            console.log('Description:', videoData.snippet.description);
-            console.log('Channel Name:', videoData.snippet.channelTitle);
+            this.localYoutubeData[videoId] = videoData.snippet;
             return videoData.snippet;
         } else {
             console.log("Video not found");
@@ -49,7 +51,10 @@ class YoutubeManager {
     }
 
     init() {
-        window.onYouTubeIframeAPIReady = () => this.createPlayer();
+        window.onYouTubeIframeAPIReady = () => {
+            this.createPlayer();
+            if (typeof window.onReadyYTAPI !== "undefined") window.onReadyYTAPI();
+        };
     }
 
     createPlayer() {
@@ -81,9 +86,6 @@ class YoutubeManager {
 
     loadVideo(videoId, onLoadCallback) {
         this.videoId = videoId;
-        if (!this.player) {
-            this.createPlayer();
-        }
 
         this.fetchYouTubeData(videoId).then((data) => {
             this.videoData = data;
@@ -91,7 +93,7 @@ class YoutubeManager {
         });
         this.addEventReady(onLoadCallback);
         this.addEventStateChange(onLoadCallback);
-        if (this.player.loadVideoById)
+        if (this.player && this.player.loadVideoById)
             this.player.loadVideoById(videoId);
     }
 
@@ -233,7 +235,6 @@ class PlayerManager {
 
             this.youtubeManager.loadVideo(videoId, () => {
                 const YTData = this.youtubeManager.getVideoData();
-                console.log(YTData);
                 this.songThumbnailElement.src = this.youtubeManager.getThumbnail();
                 this.songTitleElement.innerText = this.youtubeManager.videoData?.title || YTData.title;
                 this.songArtistElement.innerText = this.youtubeManager.videoData?.channelTitle || YTData.author;
@@ -242,6 +243,8 @@ class PlayerManager {
             if (this.youtubeManager.player)
                 this.youtubeManager.stop();
             this.youtubeManager.clearEvents();
+            
+            console.log("Audio Loggggggg");
 
             this.audioPlayer.src = song.href;
             this.audioPlayer.load();

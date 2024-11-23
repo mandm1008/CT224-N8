@@ -95,10 +95,10 @@
             <audio src="<%=song.href%>" style="display: none"></audio>
 
             <div class="song-tools">
-                <button> 
-                    <img src="<%=contextPath%>/images/icons/square-plus-solid.png" alt="Add">
-                    Thêm vào
-                </button>
+                <!--                <button> 
+                                    <img src="<%=contextPath%>/images/icons/square-plus-solid.png" alt="Add">
+                                    Thêm vào
+                                </button>-->
 
                 <button> 
                     <img src="<%=contextPath%>/images/icons/share-from-square-regular.png" alt="Share">
@@ -124,7 +124,7 @@
                     <img src="<%=(so.image.length() > 0 ? so.image : (contextPath + "/images/demo_music.png"))%>" alt="<%=so.title%>" class="music-image"/>
 
                     <div class="music-info">
-                        <p class="music-info--title"><%=so.title%></p>
+                        <p class="music-info--title" onclick="window.location = '<%=contextPath%>/songs.jsp?id=<%=so.songId%>'"><%=so.title%></p>
 
                         <p class="music-info--artist">
                             <span><%=so.artistName%></span>
@@ -137,19 +137,15 @@
 
                     <div class="music-menu">
                         <div class="music-menu--title"><%=so.title%></div>
-                        <div class="music-menu--button" onclick="playerManager.playNowSong('<%=jsonSong%>')">
+                        <div class="music-menu--button" onclick="window.location = '<%=contextPath%>/songs.jsp?id=<%=so.songId%>'">
                             <img src="<%=contextPath%>/images/icons/play-solid.png" alt="Play" />
                             <span>Phát ngay</span>
                         </div>
-                        <div class="music-menu--button" onclick="playerManager.addToPlaylist('<%=jsonSong%>')">
-                            <img src="<%=contextPath%>/images/icons/square-plus-solid.png" alt="Add" />
-                            <span>Thêm vào danh sách phát</span>
-                        </div>
-                        <div class="music-menu--button" onclick="playerManager.downloadSong(`<%=so.href%>`)">
+                        <div class="music-menu--button" onclick="pagePlayerManager.downloadSong(`<%=so.href%>`)">
                             <img src="<%=contextPath%>/images/icons/download-solid.png" alt="Download" />
                             <span>Tải xuống</span>
                         </div>
-                        <div class="music-menu--button" onclick="playerManager.shareSong(`<%=so.songId%>`)">
+                        <div class="music-menu--button" onclick="pagePlayerManager.shareSong(`<%=so.songId%>`)">
                             <img src="<%=contextPath%>/images/icons/share-from-square-regular.png" alt="Share" />
                             <span>Chia sẻ</span>
                         </div>
@@ -173,7 +169,7 @@
                     <img src="<%=s.image%>" alt="<%=s.title%>" class="music-image"/>
 
                     <div class="music-info">
-                        <p class="music-info--title"><%=s.title%></p>
+                        <p class="music-info--title" onclick="window.location = '<%=contextPath%>/songs.jsp?id=<%=s.songId%>'"><%=s.title%></p>
 
                         <p class="music-info--artist">
                             <span><%=s.artistName%></span>
@@ -197,6 +193,18 @@
 
                 menuButton.onclick = (e) => {
                     menuMusic.classList.toggle("active");
+
+                    const rect = musicElement.getBoundingClientRect();
+                    const menuRect = menuMusic.getBoundingClientRect();
+
+                    if (rect.right + menuRect.width > window.innerWidth) {
+                        menuMusic.style.left = 'auto';
+                        menuMusic.style.right = '50%'; // Hiển thị ở bên trái
+                    } else {
+                        menuMusic.style.left = '100%';
+                        menuMusic.style.right = 'auto';
+                    }
+
                     e.stopPropagation();
                 };
 
@@ -208,8 +216,9 @@
                     menuMusic.classList.remove("active");
                 });
             });
+
         </script>
-        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://www.youtube.com/iframe_api" defer></script>
         <script src="js/player.js"></script>
         <script defer>
             const pageMetadata = {
@@ -235,6 +244,7 @@
             document.querySelectorAll(".music-element-youtube").forEach(element => {
                 const href = element.getAttribute("yt-data");
                 const titleElement = element.querySelector(".music-info--title");
+                const titleMenuElement = element.querySelector(".music-menu--title");
                 const artistElement = element.querySelector(".music-info--artist span");
                 const imageElement = element.querySelector(".music-image");
                 const id = pagePlayerManager.youtubeManager.detachId(href);
@@ -243,10 +253,16 @@
                 imageElement.src = "https://img.youtube.com/vi/" + id + "/hqdefault.jpg";
 
                 pagePlayerManager.youtubeManager.fetchYouTubeData(id)
-                    .then(data => {
-                        titleElement.innerText = data.title;
-                        artistElement.innerText = data.channelTitle;
-                    });
+                        .then(data => {
+                            titleElement.innerText = data.title;
+                            artistElement.innerText = data.channelTitle;
+                            if (typeof titleMenuElement !== "undefined") {
+                                titleMenuElement.innerText = data.title;
+                            }
+                        })
+                        .catch(err => {
+                            console.log(err);
+                        });
             });
         </script>
     </body>

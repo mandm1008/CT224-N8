@@ -105,9 +105,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                     
       out.write("\n");
       out.write("\n");
-      out.write("                    <div class=\"music-element\">\n");
+      out.write("                    <div class=\"");
+      out.print((song.href.contains("youtube") ? "music-element music-element-youtube" : "music-element"));
+      out.write("\" yt-data=\"");
+      out.print((song.href.contains("youtube") ? song.href : ""));
+      out.write("\"  >\n");
       out.write("                        <img src=\"");
-      out.print(song.image);
+      out.print((song.image.length() > 0 ? song.image : (contextPath + "/images/demo_music.png")));
       out.write("\" alt=\"");
       out.print(song.title);
       out.write("\" class=\"music-image\"/>\n");
@@ -196,9 +200,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                     
       out.write("\n");
       out.write("\n");
-      out.write("                    <div class=\"music-element\">\n");
+      out.write("                    <div class=\"");
+      out.print((song.href.contains("youtube") ? "music-element music-element-youtube" : "music-element"));
+      out.write("\" yt-data=\"");
+      out.print((song.href.contains("youtube") ? song.href : ""));
+      out.write("\"  >\n");
       out.write("                        <img src=\"");
-      out.print(song.image);
+      out.print((song.image.length() > 0 ? song.image : (contextPath + "/images/demo_music.png")));
       out.write("\" alt=\"");
       out.print(song.title);
       out.write("\" class=\"music-image\"/>\n");
@@ -240,14 +248,19 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                         
       out.write("\n");
       out.write("\n");
-      out.write("                        <div class=\"music-element slider-element\">\n");
+      out.write("                        <div class=\"");
+      out.print((song.href.contains("youtube") ? "music-element music-element-youtube slider-element" : "music-element slider-element"));
+      out.write("\" yt-data=\"");
+      out.print((song.href.contains("youtube") ? song.href : ""));
+      out.write("\"  >\n");
+      out.write("                        \n");
       out.write("                            <div class=\"music-top\">\n");
       out.write("                                <h2>");
       out.print(i + 1);
       out.write("</h2>\n");
       out.write("                            </div>\n");
       out.write("                            <img src=\"");
-      out.print(song.image);
+      out.print((song.image.length() > 0 ? song.image : (contextPath + "/images/demo_music.png")));
       out.write("\" alt=\"");
       out.print(song.title);
       out.write("\" class=\"music-image\"/>\n");
@@ -283,11 +296,53 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/images/icons/forward-solid.png\" alt=\"Next\"></button>\n");
       out.write("                </div>\n");
       out.write("            </div>\n");
+      out.write("\n");
+      out.write("            ");
+  if (userSongs != null && userSongs.size() > 0) {
+      out.write("\n");
+      out.write("            <div class=\"playlist-form\">\n");
+      out.write("                <h2>Tạo Danh Sách Phát</h2>\n");
+      out.write("                <form action=\"AddToPlaylistServlet\" method=\"POST\">\n");
+      out.write("                    <label for=\"playlistName\">Tên danh sách phát:</label>\n");
+      out.write("                    <input type=\"text\" id=\"playlistName\" name=\"playlistName\" required><!-- comment -->\n");
+      out.write("                    <br><!-- comment -->\n");
+      out.write("                    <input type=\"hidden\" name=\"userId\" value=\"");
+      out.print( session.getAttribute("userId"));
+      out.write("\"><!-- comment -->\n");
+      out.write("                    <button type=\"submit\">Tạo</button>\n");
+      out.write("                </form>\n");
+      out.write("            </div>\n");
+      out.write("            ");
+ }
+      out.write("\n");
       out.write("        </div>\n");
       out.write("\n");
       out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/WEB-INF/views/player.jsp", out, false);
       out.write("\n");
+      out.write("        \n");
+      out.write("        <script defer>\n");
+      out.write("            document.querySelectorAll(\".music-element-youtube\").forEach(element => {\n");
+      out.write("                const href = element.getAttribute(\"yt-data\");\n");
+      out.write("                const titleElement = element.querySelector(\".music-info--title\");\n");
+      out.write("                const titleMenuElement = element.querySelector(\".music-menu--title\");\n");
+      out.write("                const artistElement = element.querySelector(\".music-info--artist span\");\n");
+      out.write("                const imageElement = element.querySelector(\".music-image\");\n");
+      out.write("                const id = playerManager.youtubeManager.detachId(href);\n");
+      out.write("\n");
+      out.write("                console.log(href);\n");
+      out.write("                imageElement.src = \"https://img.youtube.com/vi/\" + id + \"/hqdefault.jpg\";\n");
+      out.write("\n");
+      out.write("                playerManager.youtubeManager.fetchYouTubeData(id)\n");
+      out.write("                        .then(data => {\n");
+      out.write("                            titleElement.innerText = data.title;\n");
+      out.write("                            artistElement.innerText = data.channelTitle;\n");
+      out.write("                            if (titleMenuElement !== null) {\n");
+      out.write("                                titleMenuElement.innerText = data.title;\n");
+      out.write("                            } \n");
+      out.write("                        });\n");
+      out.write("            });\n");
+      out.write("        </script>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

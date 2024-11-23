@@ -72,7 +72,7 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
  String contextPath = request.getContextPath();
       out.write("\n");
       out.write("\n");
-      out.write("<script src=\"https://www.youtube.com/iframe_api\"></script>\n");
+      out.write("<script src=\"https://www.youtube.com/iframe_api\" defer></script>\n");
       out.write("\n");
       out.write("<div class=\"music-player\">\n");
       out.write("    <div class=\"player-info\">\n");

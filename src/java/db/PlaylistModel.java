@@ -77,7 +77,7 @@ public class PlaylistModel extends Model {
   }
 
   @Override
-  protected boolean checkAccess() {
+  public boolean checkAccess() {
     // check with title
     try {
       QueryResult qr = super.query("SELECT * FROM " + getTableName() + " WHERE (user_id, name) = (?, ?)", (pstmt) -> {

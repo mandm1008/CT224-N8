@@ -48,8 +48,8 @@
                             String jsonSong = gsonHome.toJson(song).replaceAll("(?<!\\\\)\"", "&quot;");
                     %>
 
-                    <div class="music-element">
-                        <img src="<%=song.image%>" alt="<%=song.title%>" class="music-image"/>
+                    <div class="<%=(song.href.contains("youtube") ? "music-element music-element-youtube" : "music-element")%>" yt-data="<%=(song.href.contains("youtube") ? song.href : "")%>"  >
+                        <img src="<%=(song.image.length() > 0 ? song.image : (contextPath + "/images/demo_music.png"))%>" alt="<%=song.title%>" class="music-image"/>
 
                         <div class="music-info">
                             <p class="music-info--title" onclick="window.location = '<%=contextPath%>/songs.jsp?id=<%=song.songId%>'"><%=song.title%></p>
@@ -97,8 +97,8 @@
                             Song song = userSongs.get(i);
                     %>
 
-                    <div class="music-element">
-                        <img src="<%=song.image%>" alt="<%=song.title%>" class="music-image"/>
+                    <div class="<%=(song.href.contains("youtube") ? "music-element music-element-youtube" : "music-element")%>" yt-data="<%=(song.href.contains("youtube") ? song.href : "")%>"  >
+                        <img src="<%=(song.image.length() > 0 ? song.image : (contextPath + "/images/demo_music.png"))%>" alt="<%=song.title%>" class="music-image"/>
 
                         <div class="music-info">
                             <p class="music-info--title" onclick="window.location = '<%=contextPath%>/songs.jsp?id=<%=song.songId%>'"><%=song.title%></p>
@@ -123,11 +123,12 @@
                                 Song song = mostViewSongs.get(i).toSong();
                         %>
 
-                        <div class="music-element slider-element">
+                        <div class="<%=(song.href.contains("youtube") ? "music-element music-element-youtube slider-element" : "music-element slider-element")%>" yt-data="<%=(song.href.contains("youtube") ? song.href : "")%>"  >
+                        
                             <div class="music-top">
                                 <h2><%=i + 1%></h2>
                             </div>
-                            <img src="<%=song.image%>" alt="<%=song.title%>" class="music-image"/>
+                            <img src="<%=(song.image.length() > 0 ? song.image : (contextPath + "/images/demo_music.png"))%>" alt="<%=song.title%>" class="music-image"/>
 
                             <div class="music-info">
                                 <p class="music-info--title" onclick="window.location = '<%=contextPath%>/songs.jsp?id=<%=song.songId%>'">
@@ -146,8 +147,44 @@
                     <button class="next-btn"><img src="<%=contextPath%>/images/icons/forward-solid.png" alt="Next"></button>
                 </div>
             </div>
+
+            <%  if (userSongs != null && userSongs.size() > 0) {%>
+            <div class="playlist-form">
+                <h2>Tạo Danh Sách Phát</h2>
+                <form action="AddToPlaylistServlet" method="POST">
+                    <label for="playlistName">Tên danh sách phát:</label>
+                    <input type="text" id="playlistName" name="playlistName" required><!-- comment -->
+                    <br><!-- comment -->
+                    <input type="hidden" name="userId" value="<%= session.getAttribute("userId")%>"><!-- comment -->
+                    <button type="submit">Tạo</button>
+                </form>
+            </div>
+            <% }%>
         </div>
 
         <jsp:include page="/WEB-INF/views/player.jsp" />
+        
+        <script defer>
+            document.querySelectorAll(".music-element-youtube").forEach(element => {
+                const href = element.getAttribute("yt-data");
+                const titleElement = element.querySelector(".music-info--title");
+                const titleMenuElement = element.querySelector(".music-menu--title");
+                const artistElement = element.querySelector(".music-info--artist span");
+                const imageElement = element.querySelector(".music-image");
+                const id = playerManager.youtubeManager.detachId(href);
+
+                console.log(href);
+                imageElement.src = "https://img.youtube.com/vi/" + id + "/hqdefault.jpg";
+
+                playerManager.youtubeManager.fetchYouTubeData(id)
+                        .then(data => {
+                            titleElement.innerText = data.title;
+                            artistElement.innerText = data.channelTitle;
+                            if (titleMenuElement !== null) {
+                                titleMenuElement.innerText = data.title;
+                            } 
+                        });
+            });
+        </script>
     </body>
 </html>

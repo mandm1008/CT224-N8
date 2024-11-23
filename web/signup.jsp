@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <div class="music-signup-container">
+    <div class="music-login-container">
         <div class="music-logo">
-            <img src="images/music-logo.png" alt="Music Logo">
+            <img src="images/music-logo.png" alt="Music Logo" onclick="window.location = '<%=request.getContextPath()%>'">
         </div>
         <h2>Create an Account</h2>
         

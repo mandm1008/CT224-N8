@@ -55,16 +55,36 @@ musicElements.forEach((musicElement) => {
     const menuButton = musicElement.querySelector(".music-menu--icon");
     const menuMusic = musicElement.querySelector(".music-menu");
     
+    if (menuButton === null) {
+        return;
+    }
+    
+    if (menuMusic === null) {
+        return;
+    }
+
     menuButton.onclick = (e) => {
         menuMusic.classList.toggle("active");
+
+        const rect = musicElement.getBoundingClientRect();
+        const menuRect = menuMusic.getBoundingClientRect();
+
+        if (rect.right + menuRect.width > window.innerWidth) {
+            menuMusic.style.left = 'auto';
+            menuMusic.style.right = '50%'; // Hiển thị ở bên trái
+        } else {
+            menuMusic.style.left = '100%';
+            menuMusic.style.right = 'auto';
+        }
+
         e.stopPropagation();
     };
-    
+
     menuMusic.onclick = (e) => {
-       e.stopPropagation();
+        e.stopPropagation();
     };
-    
+
     window.addEventListener("click", (e) => {
-       menuMusic.classList.remove("active"); 
+        menuMusic.classList.remove("active");
     });
 });

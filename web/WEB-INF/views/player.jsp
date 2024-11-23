@@ -25,7 +25,7 @@
 
 <% String contextPath = request.getContextPath();%>
 
-<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://www.youtube.com/iframe_api" defer></script>
 
 <div class="music-player">
     <div class="player-info">

@@ -16,7 +16,7 @@
 <body>
     <div class="music-login-container">
         <div class="music-logo">
-            <img src="images/music-logo.png" alt="Music Logo">
+            <img src="images/music-logo.png" alt="Music Logo" onclick="window.location = '<%=request.getContextPath()%>'">
         </div>
         <h2>Login to Enjoy Music</h2>
         

@@ -258,7 +258,9 @@ body {
 }
 
 .music-element .music-image {
-    width: 100px;
+    width: auto;
+    height: 56px;
+    max-height: 56px;
 }
 
 .music-info {
@@ -567,4 +569,68 @@ body {
     height: 12px;
     width: auto;
     margin-right: 4px;
+}
+
+.playlist-form {
+    margin: 24px auto;
+    padding: 16px;
+    width: 90%;
+    background-color: #282a36;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f8f8f2;
+    text-align: center;
+}
+
+.playlist-form h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #50fa7b;
+}
+
+.playlist-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #8be9fd;
+}
+
+.playlist-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #6272a4;
+    border-radius: 8px;
+    background-color: #44475a;
+    color: #f8f8f2;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.playlist-form input[type="text"]:focus {
+    border-color: #50fa7b;
+}
+
+.playlist-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f8f8f2;
+    background-color: #50fa7b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.playlist-form button:hover {
+    background-color: #8be9fd;
+    transform: translateY(-2px);
+}
+
+.playlist-form button:active {
+    background-color: #6272a4;
+    transform: translateY(0);
 }

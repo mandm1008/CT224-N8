@@ -4,6 +4,7 @@
  */
 package servlet;
 
+import db.SongModel;
 import db.UserMusic;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
@@ -31,6 +32,9 @@ public class UserAction extends HttpServlet {
         String type = request.getParameter("type");
         String id = request.getParameter("id");
         response.setContentType("application/json");
+        
+        SongModel songModel = new SongModel(Integer.parseInt(id));
+        songModel.increaseView();
         
         // check user
         DAO.User user = (DAO.User) request.getSession().getAttribute("user");
