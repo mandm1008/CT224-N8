@@ -17710,3 +17710,1079 @@ java.lang.IllegalStateException: Service already unregistered.
 [2024-11-19T22:11:48.227+0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=3379 _ThreadName=Thread-7] [timeMillis: 1732029108227] [levelValue: 800] [[
   JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
 
+[2024-11-23T10:55:37.208+0700] [glassfish 6.2] [INFO] [NCLS-LOGGING-00009] [jakarta.enterprise.logging] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1732334137069] [timeMillis: 1732334137208] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish  6.2.5  (build 6.x-b66-g0159b68 2022-02-12T17:39:59+0000)]]
+
+[2024-11-23T10:55:37.209+0700] [glassfish 6.2] [INFO] [NCLS-LOGGING-00010] [jakarta.enterprise.logging] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1732334137069] [timeMillis: 1732334137209] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2024-11-23T10:55:37.349+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732334137074] [timeMillis: 1732334137349] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-11-23T10:55:37.355+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732334137074] [timeMillis: 1732334137355] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-11-23T10:55:37.366+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732334137074] [timeMillis: 1732334137366] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2024-11-23T10:55:37.443+0700] [glassfish 6.2] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334137443] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2024-11-23T10:55:37.667+0700] [glassfish 6.2] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1732334137069] [timeMillis: 1732334137667] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2024-11-23T10:55:38.357+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732334137074] [timeMillis: 1732334138357] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 308ms - bound to [/0.0.0.0:8080]]]
+
+[2024-11-23T10:55:38.392+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732334137074] [timeMillis: 1732334138392] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 4ms - bound to [/0.0.0.0:8181]]]
+
+[2024-11-23T10:55:38.423+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1732334137074] [timeMillis: 1732334138423] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 17ms - bound to [/0.0.0.0:4848]]]
+
+[2024-11-23T10:55:38.463+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=27 _ThreadName=RunLevelControllerThread-1732334137074] [timeMillis: 1732334138463] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 4ms - bound to [/0.0.0.0:3700]]]
+
+[2024-11-23T10:55:38.837+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334138837] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:39.471+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01002] [jakarta.enterprise.system.core.security] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139471] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2024-11-23T10:55:39.472+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01010] [jakarta.enterprise.system.core.security] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139472] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2024-11-23T10:55:39.475+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01143] [jakarta.enterprise.system.core.security] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139475] [levelValue: 800] [[
+  Loading policy provider org.glassfish.exousia.modules.locked.SimplePolicyProvider.]]
+
+[2024-11-23T10:55:39.510+0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01011] [jakarta.enterprise.system.core.security] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139510] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2024-11-23T10:55:39.919+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139919] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2024-11-23T10:55:39.924+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139924] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2024-11-23T10:55:39.926+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139926] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2024-11-23T10:55:39.972+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139972] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2024-11-23T10:55:39.976+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334139976] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2024-11-23T10:55:40.243+0700] [glassfish 6.2] [INFO] [AS-WEB-CORE-00306] [jakarta.enterprise.web.core] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334140243] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2024-11-23T10:55:40.244+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334140244] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2024-11-23T10:55:40.647+0700] [glassfish 6.2] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334140647] [levelValue: 800] [[
+  HV000001: Hibernate Validator 7.0.2.Final]]
+
+[2024-11-23T10:55:40.845+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334140845] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:41.070+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334141070] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:41.076+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334141076] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:41.116+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334141116] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:41.133+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334141133] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:41.310+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334141310] [levelValue: 900] [[
+  The web application [unknown] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-23T10:55:41.732+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334141732] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T10:55:41.737+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1732334137068] [timeMillis: 1732334141737] [levelValue: 800] [[
+  Loading application MusicProject done in 4.053 ms]]
+
+[2024-11-23T10:55:41.743+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1732334141743] [levelValue: 800] [[
+  Eclipse GlassFish  6.2.5  (6.x-b66-g0159b68 2022-02-12T17:39:59+0000) startup time : Felix (3.783ms), startup services(4.679ms), total(8.462ms)]]
+
+[2024-11-23T10:55:41.961+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=26 _ThreadName=RunLevelControllerThread-1732334137069] [timeMillis: 1732334141961] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 116ms - bound to [/0.0.0.0:7676]]]
+
+[2024-11-23T10:55:42.208+0700] [glassfish 6.2] [INFO] [NCLS-BOOTSTRAP-00027] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1732334142208] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@648ee871 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@375b5b7f.]]
+
+[2024-11-23T10:55:42.474+0700] [glassfish 6.2] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=116 _ThreadName=Thread-18] [timeMillis: 1732334142474] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://DESKTOP-044DVI5:8686/jndi/rmi://DESKTOP-044DVI5:8686/jmxrmi]]
+
+[2024-11-23T10:55:42.506+0700] [glassfish 6.2] [INFO] [] [org.jvnet.hk2.osgiadapter] [tid: _ThreadID=23 _ThreadName=FelixStartLevel] [timeMillis: 1732334142506] [levelValue: 800] [[
+  Skipping registration of inhabitant for service reference [org.osgi.service.metatype.MetaTypeProvider] as the service object could not be obtained.]]
+
+[2024-11-23T10:55:42.570+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=77 _ThreadName=Thread-15] [timeMillis: 1732334142570] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:43.185+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=77 _ThreadName=Thread-15] [timeMillis: 1732334143185] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:43.197+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=77 _ThreadName=Thread-15] [timeMillis: 1732334143197] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:43.213+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=77 _ThreadName=Thread-15] [timeMillis: 1732334143213] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:45.098+0700] [glassfish 6.2] [INFO] [jsf.config.listener.version] [jakarta.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=77 _ThreadName=Thread-15] [timeMillis: 1732334145098] [levelValue: 800] [[
+  Initializing Mojarra 3.0.1 for context '']]
+
+[2024-11-23T10:55:46.130+0700] [glassfish 6.2] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334146130] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2024-11-23T10:55:47.156+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=75 _ThreadName=pool-12-thread-1] [timeMillis: 1732334147156] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2024-11-23T10:55:47.370+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=77 _ThreadName=Thread-15] [timeMillis: 1732334147370] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2024-11-23T10:55:47.372+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=77 _ThreadName=Thread-15] [timeMillis: 1732334147372] [levelValue: 800] [[
+  Loading application __admingui done in 5.630 ms]]
+
+[2024-11-23T10:55:47.379+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=75 _ThreadName=pool-12-thread-1] [timeMillis: 1732334147379] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 7ms - bound to [/0.0.0.0:8181]]]
+
+[2024-11-23T10:55:47.557+0700] [glassfish 6.2] [WARNING] [] [javax.enterprise.system.container.web.com.sun.web.security] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334147557] [levelValue: 900] [[
+  Context path from ServletContext:  differs from path from bundle: /]]
+
+[2024-11-23T10:55:51.743+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=67 _ThreadName=pool-6-thread-1] [timeMillis: 1732334151743] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2024-11-23T10:55:51.757+0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=67 _ThreadName=pool-6-thread-1] [timeMillis: 1732334151757] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 7ms - bound to [/0.0.0.0:8080]]]
+
+[2024-11-23T10:55:54.729+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334154729] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:54.915+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334154915] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:54.953+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334154953] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:54.955+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334154955] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:54.957+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334154957] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:54.959+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334154959] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:55:55.150+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334155150] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T10:55:55.188+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334155188] [levelValue: 800] [[
+  MusicProject was successfully deployed in 1.145 milliseconds.]]
+
+[2024-11-23T10:56:07.355+0700] [glassfish 6.2] [SEVERE] [] [org.apache.jasper.compiler.Compiler] [tid: _ThreadID=158 _ThreadName=http-listener-1(1)] [timeMillis: 1732334167355] [levelValue: 1000] [[
+  Error compiling file: D:\Workspace\NetBeans\MusicProject\lib\GlassFish_Server\glassfish\domains\domain\generated\jsp\MusicProject\org\apache\jsp\index_jsp.java]]
+
+[2024-11-23T10:56:07.381+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=158 _ThreadName=http-listener-1(1)] [timeMillis: 1732334167381] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+package DAO does not exist
+
+PWC6199: Generated servlet error:
+package DAO does not exist
+
+PWC6197: An error occurred at line: 17 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class User
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 17 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class User
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 17 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class Song
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 46 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class Song
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 96 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class Song
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 122 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class Song
+  location: class org.apache.jsp.index_jsp
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:89)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:247)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:332)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:387)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:561)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:288)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:355)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:284)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]
+
+[2024-11-23T10:57:14.660+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334234660] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:15.756+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334235756] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:15.860+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334235860] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:15.867+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334235867] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:15.869+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334235869] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:15.870+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334235870] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:16.298+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334236298] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T10:57:16.447+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334236447] [levelValue: 800] [[
+  MusicProject was successfully deployed in 4.830 milliseconds.]]
+
+[2024-11-23T10:57:18.439+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334238439] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:18.519+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334238519] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:18.543+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334238543] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:18.543+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334238543] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:18.544+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334238544] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:18.545+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334238545] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:18.671+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334238671] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T10:57:18.679+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334238679] [levelValue: 800] [[
+  MusicProject was successfully deployed in 742 milliseconds.]]
+
+[2024-11-23T10:57:38.107+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334258107] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:38.993+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334258993] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:39.208+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334259208] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:39.220+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334259220] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:39.244+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334259244] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:39.257+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334259257] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:40.158+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334260158] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T10:57:40.240+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334260240] [levelValue: 800] [[
+  MusicProject was successfully deployed in 4.394 milliseconds.]]
+
+[2024-11-23T10:57:45.226+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334265226] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:46.808+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334266808] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:46.995+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334266995] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:47.000+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334267000] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:47.004+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334267004] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:47.006+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334267006] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:47.887+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334267887] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T10:57:47.946+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334267946] [levelValue: 800] [[
+  MusicProject was successfully deployed in 4.113 milliseconds.]]
+
+[2024-11-23T10:57:57.508+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334277508] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:58.291+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334278291] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:58.384+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334278384] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:58.386+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334278386] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:58.387+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334278387] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:58.389+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334278389] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:58.601+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334278601] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T10:57:58.625+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334278625] [levelValue: 800] [[
+  MusicProject was successfully deployed in 3.652 milliseconds.]]
+
+[2024-11-23T10:57:59.799+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334279799] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:59.894+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334279894] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:59.924+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334279924] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:59.927+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334279927] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:59.928+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334279928] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:57:59.931+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334279931] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T10:58:00.135+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334280135] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T10:58:00.151+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732334280151] [levelValue: 800] [[
+  MusicProject was successfully deployed in 781 milliseconds.]]
+
+[2024-11-23T10:58:20.732+0700] [glassfish 6.2] [SEVERE] [] [org.apache.jasper.compiler.Compiler] [tid: _ThreadID=159 _ThreadName=http-listener-1(2)] [timeMillis: 1732334300732] [levelValue: 1000] [[
+  Error compiling file: D:\Workspace\NetBeans\MusicProject\lib\GlassFish_Server\glassfish\domains\domain\generated\jsp\MusicProject\org\apache\jsp\index_jsp.java]]
+
+[2024-11-23T10:58:20.752+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=159 _ThreadName=http-listener-1(2)] [timeMillis: 1732334300752] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+package DAO does not exist
+
+PWC6199: Generated servlet error:
+package DAO does not exist
+
+PWC6197: An error occurred at line: 17 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class User
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 17 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class User
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 17 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class Song
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 46 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class Song
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 96 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class Song
+  location: class org.apache.jsp.index_jsp
+
+PWC6197: An error occurred at line: 122 in the jsp file: /index.jsp
+PWC6199: Generated servlet error:
+cannot find symbol
+  symbol:   class Song
+  location: class org.apache.jsp.index_jsp
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:89)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:247)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:332)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:387)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:561)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:288)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:355)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:284)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]
+
+[2024-11-23T11:00:49.876+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334449876] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:00:50.432+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334450432] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:00:50.575+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334450575] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:00:50.577+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334450577] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:00:50.578+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334450578] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:00:50.584+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334450584] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:00:51.122+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334451122] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:00:51.208+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334451208] [levelValue: 800] [[
+  MusicProject was successfully deployed in 2.183 milliseconds.]]
+
+[2024-11-23T11:01:45.383+0700] [glassfish 6.2] [SEVERE] [] [org.apache.jasper.servlet.JspServlet] [tid: _ThreadID=159 _ThreadName=http-listener-1(2)] [timeMillis: 1732334505383] [levelValue: 1000] [[
+  PWC6117: File "null" not found]]
+
+[2024-11-23T11:01:58.767+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=162 _ThreadName=http-listener-1(5)] [timeMillis: 1732334518767] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException: Cannot read field "user_id" because "kq" is null
+	at org.apache.jsp.admin.admin_005fusers_jsp._jspService(admin_005fusers_jsp.java:112)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:68)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:324)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:355)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:284)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]
+
+[2024-11-23T11:02:44.272+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=159 _ThreadName=http-listener-1(2)] [timeMillis: 1732334564272] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException: Cannot read field "user_id" because "kq" is null
+	at org.apache.jsp.admin.admin_005fusers_jsp._jspService(admin_005fusers_jsp.java:112)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:68)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:324)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:355)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:284)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]
+
+[2024-11-23T11:06:10.225+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334770225] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-23T11:06:11.547+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334771547] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:06:12.350+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334772350] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:06:12.445+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334772445] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:06:12.447+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334772447] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:06:12.450+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334772450] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:06:12.457+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334772457] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:06:12.870+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334772870] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:06:12.908+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732334772908] [levelValue: 800] [[
+  MusicProject was successfully deployed in 3.993 milliseconds.]]
+
+[2024-11-23T11:09:21.940+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334961940] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:23.106+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334963106] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:23.701+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334963701] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:23.709+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334963709] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:23.719+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334963719] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:23.729+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334963729] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:24.308+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334964308] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:09:24.344+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732334964344] [levelValue: 800] [[
+  MusicProject was successfully deployed in 4.657 milliseconds.]]
+
+[2024-11-23T11:09:56.104+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334996104] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:56.643+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334996643] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:56.780+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334996780] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:56.786+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334996786] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:56.788+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334996788] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:56.789+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334996789] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:09:57.597+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334997597] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:09:57.710+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732334997710] [levelValue: 800] [[
+  MusicProject was successfully deployed in 2.724 milliseconds.]]
+
+[2024-11-23T11:10:26.036+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=161 _ThreadName=http-listener-1(4)] [timeMillis: 1732335026036] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException: Cannot read field "song_id" because "kq" is null
+	at org.apache.jsp.admin.song_jsp._jspService(song_jsp.java:120)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:68)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:324)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:355)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:284)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]
+
+[2024-11-23T11:11:58.160+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335118160] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-23T11:12:00.312+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335120312] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:12:01.050+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335121050] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:12:01.186+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335121186] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:12:01.187+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335121187] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:12:01.188+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335121188] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:12:01.189+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335121189] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:12:02.199+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335122199] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:12:02.267+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [timeMillis: 1732335122267] [levelValue: 800] [[
+  MusicProject was successfully deployed in 4.877 milliseconds.]]
+
+[2024-11-23T11:12:14.424+0700] [glassfish 6.2] [SEVERE] [] [] [tid: _ThreadID=162 _ThreadName=Thread-8] [timeMillis: 1732335134424] [levelValue: 1000] [[
+  Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.]]
+
+[2024-11-23T11:14:15.938+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335255938] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-23T11:14:17.254+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335257254] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:17.651+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335257651] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:17.810+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335257810] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:17.812+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335257812] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:17.813+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335257813] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:17.814+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335257814] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:18.197+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335258197] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:14:18.226+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335258226] [levelValue: 800] [[
+  MusicProject was successfully deployed in 3.089 milliseconds.]]
+
+[2024-11-23T11:14:20.160+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335260160] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:20.385+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335260385] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:20.444+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335260444] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:20.450+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335260450] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:20.456+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335260456] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:20.468+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335260468] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:20.887+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335260887] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:14:20.947+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [timeMillis: 1732335260947] [levelValue: 800] [[
+  MusicProject was successfully deployed in 1.699 milliseconds.]]
+
+[2024-11-23T11:14:37.619+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335277619] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:39.410+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335279410] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:40.171+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335280171] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:40.175+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335280175] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:40.179+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335280179] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:40.197+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335280197] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:14:41.063+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335281063] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:14:41.151+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335281151] [levelValue: 800] [[
+  MusicProject was successfully deployed in 5.449 milliseconds.]]
+
+[2024-11-23T11:15:51.057+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335351057] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:15:52.204+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335352204] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:15:52.663+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335352663] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:15:52.664+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335352664] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:15:52.665+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335352665] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:15:52.667+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335352667] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:15:53.138+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335353138] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:15:53.203+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335353203] [levelValue: 800] [[
+  MusicProject was successfully deployed in 3.418 milliseconds.]]
+
+[2024-11-23T11:16:21.886+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335381886] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:16:22.514+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335382514] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:16:22.702+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335382702] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:16:22.704+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335382704] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:16:22.705+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335382705] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:16:22.707+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335382707] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:16:23.056+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335383056] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:16:23.112+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335383112] [levelValue: 800] [[
+  MusicProject was successfully deployed in 2.510 milliseconds.]]
+
+[2024-11-23T11:16:49.425+0700] [glassfish 6.2] [SEVERE] [] [] [tid: _ThreadID=161 _ThreadName=Thread-8] [timeMillis: 1732335409425] [levelValue: 1000] [[
+  Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.]]
+
+[2024-11-23T11:20:23.221+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335623221] [levelValue: 900] [[
+  The web application [/MusicProject] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2024-11-23T11:20:25.065+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335625065] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:25.940+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335625940] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:26.202+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335626202] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:26.205+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335626205] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:26.214+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335626214] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:26.221+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335626221] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:26.716+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335626716] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:20:26.772+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [timeMillis: 1732335626772] [levelValue: 800] [[
+  MusicProject was successfully deployed in 4.104 milliseconds.]]
+
+[2024-11-23T11:20:43.217+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335643217] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:44.422+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335644422] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:44.569+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335644569] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:44.571+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335644571] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:44.572+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335644572] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:44.573+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335644573] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:20:44.878+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335644878] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:20:44.906+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [timeMillis: 1732335644906] [levelValue: 800] [[
+  MusicProject was successfully deployed in 3.706 milliseconds.]]
+
+[2024-11-23T11:22:00.615+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335720615] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:22:01.398+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335721398] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:22:01.581+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335721581] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:22:01.582+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335721582] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:22:01.585+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335721585] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:22:01.586+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335721586] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2024-11-23T11:22:02.152+0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335722152] [levelValue: 800] [[
+  Loading application [MusicProject] at [/MusicProject]]]
+
+[2024-11-23T11:22:02.286+0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [timeMillis: 1732335722286] [levelValue: 800] [[
+  MusicProject was successfully deployed in 2.844 milliseconds.]]
+
+[2024-11-23T11:22:30.495+0700] [glassfish 6.2] [SEVERE] [] [] [tid: _ThreadID=158 _ThreadName=Thread-8] [timeMillis: 1732335750495] [levelValue: 1000] [[
+  Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.]]
+
+[2024-11-23T11:23:40.975+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=161 _ThreadName=http-listener-1(4)] [timeMillis: 1732335820975] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection closed
+	at org.glassfish.grizzly.asyncqueue.TaskQueue.onClose(TaskQueue.java:299)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.onClose(AbstractNIOAsyncQueueWriter.java:415)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.closeConnection(TCPNIOTransport.java:379)
+	at org.glassfish.grizzly.nio.NIOConnection.doClose(NIOConnection.java:599)
+	at org.glassfish.grizzly.nio.NIOConnection$6.run(NIOConnection.java:566)
+	at org.glassfish.grizzly.nio.DefaultSelectorHandler.execute(DefaultSelectorHandler.java:190)
+	at org.glassfish.grizzly.nio.NIOConnection.terminate0(NIOConnection.java:561)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.terminate0(TCPNIOConnection.java:249)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:151)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:67)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.processAsync(AbstractNIOAsyncQueueWriter.java:285)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:92)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:73)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:66)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:381)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:353)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:319)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:248)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:145)
+	... 16 more
+]]
+
+[2024-11-23T11:24:03.389+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=159 _ThreadName=http-listener-1(2)] [timeMillis: 1732335843389] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Connection closed
+	at org.glassfish.grizzly.asyncqueue.TaskQueue.onClose(TaskQueue.java:299)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.onClose(AbstractNIOAsyncQueueWriter.java:415)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.closeConnection(TCPNIOTransport.java:379)
+	at org.glassfish.grizzly.nio.NIOConnection.doClose(NIOConnection.java:599)
+	at org.glassfish.grizzly.nio.NIOConnection$6.run(NIOConnection.java:566)
+	at org.glassfish.grizzly.nio.DefaultSelectorHandler.execute(DefaultSelectorHandler.java:190)
+	at org.glassfish.grizzly.nio.NIOConnection.terminate0(NIOConnection.java:561)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.terminate0(TCPNIOConnection.java:249)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:151)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:67)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.processAsync(AbstractNIOAsyncQueueWriter.java:285)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:92)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:73)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:66)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:381)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:353)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:319)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:248)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:76)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:118)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:145)
+	... 16 more
+]]
+
+[2024-11-23T11:28:17.247+0700] [glassfish 6.2] [WARNING] [] [jakarta.enterprise.web] [tid: _ThreadID=159 _ThreadName=http-listener-1(2)] [timeMillis: 1732336097247] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: Write timeout exceeded when trying to flush the data
+	at org.glassfish.grizzly.http.io.OutputBuffer.blockAfterWriteIfNeeded(OutputBuffer.java:939)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:650)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:296)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:283)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:113)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2457)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2190)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1035)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:468)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:500)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1540)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:119)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:611)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:550)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:75)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:114)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:332)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:199)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:440)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:34)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]
+

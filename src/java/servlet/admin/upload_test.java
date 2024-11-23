@@ -2,23 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
-package servlet;
+package servlet.admin;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
-import db.UserModel;
 
 /**
  *
  * @author ASUS
  */
-@WebServlet(name = "LoginServlet", urlPatterns = {"/api/login"})
-public class LoginServlet extends HttpServlet {
+public class upload_test extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,27 +29,17 @@ public class LoginServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String contextPath = request.getContextPath();
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-
-        if (!username.trim().isEmpty() && !password.trim().isEmpty()) {
-            UserModel user = UserModel.match(username, password);
-
-            if (user != null) {
-                // handle session
-                request.getSession().setAttribute("user", user.toUser());
-
-                if (user.getUsername().equals("admin")) {
-                    response.sendRedirect(contextPath + "/admin/LoadData");
-                } else {
-                    response.sendRedirect(contextPath + "/index.jsp");
-                }
-            } else {
-                response.sendRedirect(contextPath + "/login.jsp?err=invalid");
-            }
-        } else {
-            response.sendRedirect(contextPath + "/login.jsp?err=missing");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet upload_test</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet upload_test at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 
