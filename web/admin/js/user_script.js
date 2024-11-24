@@ -10,6 +10,7 @@ function add_user()
     
     var form_them = document.getElementById("them_user");
     form_them.action = "./them_user";
+    document.getElementById("form_title").innerText = "Thêm User";
 }
 
 function edit_user()
@@ -29,6 +30,13 @@ function edit_user()
     document.them_user.style.display = "block";
     var form_change_action = document.getElementById("them_user");
     form_change_action.action = "./sua_user";
+    document.getElementById("form_title").innerText = "Sửa User";
+}
+
+function them_hide()
+{
+        document.them_user.style.display = "none";
+        document.getElementById("them_hide_button").style.display = "none";
 }
 
 function delete_user()
@@ -93,5 +101,27 @@ function updateActiveButtonStates() {
 });
 
 
+function tim_user_sc()
+{
+    var tim_value = document.getElementById("search_user").value;
+    var tim_op = document.getElementById("tim_op");
+    if(tim_op.value === "tim_op_select")
+    {
+        alert("Chọn giá trị tìm kiếm");
+    }
+    else
+    {
+        document.tim_user.tim_v.value = tim_value;
+        document.tim_user.tim_w.value = tim_op.value;
+        document.getElementById("tim_user").submit();
+    }
+    console.log(document.tim_user.tim_v.value);
+    console.log(document.tim_user.tim_w.value);
+    
+}
 
+function reload() 
+{
+        window.location.href = 'LoadData_User';  // Redirect to the servlet
+}
 

@@ -1,11 +1,9 @@
-
 <%@page import="jakarta.servlet.RequestDispatcher"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.*"%>
 <%@page import="java.util.*"%>
 <%@page import="DAO.Bang_user"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,8 +40,14 @@
         <div id="table_container">
             <div id="top_table">
         <button type="button" id ="btn_them" onclick="add_user()">Thêm User</button><br>
-        <input type="text" name="search_song" id="search_song">
-        <button type="button" id ="btn_them" onclick="testa()">Tìm Kiếm</button><br>
+        <select name="tim_op" id="tim_op">
+          <option value="tim_op_select">Select</option>
+          <option value="user_id">User ID</option>
+          <option value="username">Username</option>
+        </select>
+        <input type="text" name="search_user" id="search_user">
+        <button type="button" id ="btn_them" onclick="tim_user_sc()">Tìm Kiếm</button><br>
+        <button type="button" id ="btn_reload" onclick="reload()">Reload</button><br>
         </div>
             <article class="content">
         <table id = "song_table_id" class = "song_table_class">
@@ -58,7 +62,7 @@
             </thead>
             <tbody id="tableBody">
         <%
-        Bang_user kq = (Bang_user) session.getAttribute("kq");
+        Bang_user kq = (Bang_user)session.getAttribute("kq");
         int i, si = kq.user_id.size();
         for(i = 0;i<si;i++)
           {
@@ -75,14 +79,13 @@
              </tbody>
         </table>
              </article>
-      
-    <div class="pagination" id="paginationControls">
        
     </div>
         
         </div>
         <div id="them_user_container">
         <form name = "them_user" id ="them_user" action = "./them_user" method="post" enctype="multipart/form-data" style="display:none">
+        <label><strong id ="form_title">THÊM BÀI HÁT</strong></label><br>
         <label for="user_id">User ID</label><br>
         <input type="text" id="user_id" name="user_id"><br>
         <label for="username">Username</label><br>
@@ -102,7 +105,11 @@
         <button type="submit" style = "display: none">Delete</button>
         </form>
         
-        
+        <form action = "./tim_user" name="tim_user" id="tim_user" style="display: none">
+            <input type="hidden" id="tim_w" name="tim_w">
+            <input type="hidden" id="tim_v" name="tim_v">
+            <button type="submit">submit</button>
+        </form>
         
         
         

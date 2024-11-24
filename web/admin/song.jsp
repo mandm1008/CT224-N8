@@ -58,7 +58,9 @@
         <button type="button" id ="btn_them" onclick="tim_song()">Tìm Kiếm</button><br>
         <button type="button" id ="btn_reload" onclick="reload()">Reload</button><br>
         </div>
+            <article class="content">
         <table id = "song_table_id" class = "song_table_class">
+            <thead>
             <tr>
                 <th>Song ID</th>
                 <th>Title</th>
@@ -69,8 +71,10 @@
                 <th>IMG<th>
                 <th colspan="2"></th> 
             </tr>
+             </thead>
+             <tbody id="tableBody">
         <%
-        Bang kq = (Bang) session.getAttribute("kq");
+        Bang kq = (Bang)session.getAttribute("kq");
         int i, si = kq.song_id.size();
         for(i = 0;i<si;i++)
           {
@@ -87,7 +91,10 @@
           out.println("</tr>");
           }
         %>
+        </tbody>
         </table>
+        </article>
+        <div class="pagination" id="paginationControls">
         </div>
         <hr>
         
@@ -95,7 +102,7 @@
         <div class="form-them-container">
         <form name = "them" id ="them" action = "./them" method="post" enctype="multipart/form-data" style="display:none">
             
-        <label><strong>THÊM BÀI HÁT</strong></label>
+        <label><strong id ="form_title">THÊM BÀI HÁT</strong></label>
         <label for="song_id" class = "them_song_id">Song Id</label><br>
         <input type="text" id="song_id" name="song_id" class = "them_song_id"><br>  
         
@@ -103,7 +110,7 @@
         <input type="text" id="title" name="title"><br>
         
         
-        <label for="artist_id">Artist ID</label><br>
+        <label for="artist_id">Artist Name</label><br>
         <input type="text" id="artist_id" name="artist_id"><br>
         
         <select id="options_them" name="options">

@@ -30,6 +30,7 @@ public class them extends HttpServlet {
     Connection conn = null;
     Statement stm = null;
     
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
@@ -50,7 +51,42 @@ public class them extends HttpServlet {
                
                 
                 String title = (String)request.getParameter("title");
-                String artist_id = (String)request.getParameter("artist_id");
+                String artist_name = (String)request.getParameter("artist_id");
+                
+                String sql_checkartist = "select * from artists where name = '" + artist_name +"';";
+                PreparedStatement pstmt = conn.prepareStatement(sql_checkartist);
+                ResultSet rs_2 = pstmt.executeQuery();
+                String artist_real_id = null;
+                if(rs_2.next())
+                {
+                    //Have Record
+                    String sql_get_artist_id = "select artist_id from artists where name = ?";
+                    pstmt = conn.prepareStatement(sql_get_artist_id);
+                    pstmt.setString(1, artist_name);
+                    ResultSet atd = pstmt.executeQuery();
+                    while(atd.next())
+                    {
+                    artist_real_id = atd.getString("artist_id");
+                    }
+                }
+                else
+                {
+                    //No
+                    String sql_insert_artist = "insert into artists(name) values(?)";
+                    pstmt = conn.prepareStatement(sql_insert_artist);
+                    pstmt.setString(1, artist_name);
+                    pstmt.executeUpdate();
+                    String sql_get_artist_id = "select artist_id from artists where name = ?";
+                    pstmt = conn.prepareStatement(sql_get_artist_id);
+                    pstmt.setString(1, artist_name);
+                    ResultSet atd = pstmt.executeQuery();
+                    while(atd.next())
+                    {
+                    artist_real_id = atd.getString("artist_id");
+                    }
+                }
+                
+                
                 String lof_them = (String)request.getParameter("lof_them");
                 
                 
@@ -75,9 +111,10 @@ public class them extends HttpServlet {
                     if (!uploadDir.exists()) {
                     uploadDir.mkdir();  // Tạo thư mục nếu chưa tồn tại
                         }
-                    
+                    String update_filename_file = getUniqueFileName(fileName, uploadPath);
                     // Đường dẫn đầy đủ của tệp tải lên
-                    String filePath = uploadPath + "/" + fileName;
+                    String filePath = uploadPath + "/" + update_filename_file;
+                  //  String filePath = uploadPath + "/" + fileName;
 
                   // Lưu tệp vào thư mục
                    try (InputStream fileContent = filePart.getInputStream()) 
@@ -85,7 +122,7 @@ public class them extends HttpServlet {
                        
                    Files.copy(fileContent, Paths.get(filePath), StandardCopyOption.REPLACE_EXISTING);
           }
-                   href = request.getContextPath() + "/uploads/audio" + "/" + fileName;
+                   href = request.getContextPath() + "/uploads/audio" + "/" + update_filename_file;
                 }
                 
                 // Lấy phần tệp từ request
@@ -100,23 +137,23 @@ public class them extends HttpServlet {
                     if (!uploadDir.exists()) {
                     uploadDir.mkdir();  // Tạo thư mục nếu chưa tồn tại
                         }
-                    
+                    String update_filename = getUniqueFileName(fileName, uploadPath);
                     // Đường dẫn đầy đủ của tệp tải lên
-                    String filePath2 = uploadPath + "/" + fileName;
-
+                 //   String filePath2 = uploadPath + "/" + fileName;
+String filePath2 = uploadPath + "/" + update_filename;
                   // Lưu tệp vào thư mục
                    try (InputStream fileContent = filePart2.getInputStream()) 
           {
                        
                    Files.copy(fileContent, Paths.get(filePath2), StandardCopyOption.REPLACE_EXISTING);
           }
-                   image = request.getContextPath() + "/uploads/images" + "/" + fileName;
+                   image = request.getContextPath() + "/uploads/images" + "/" + update_filename;
                 
                 
                 
                 
                 String sql = "insert into songs (title,artist_id,href,image) values "
-                    + "('" + title + "','" + artist_id + "','" + href + "','" + image + "');";
+                    + "('" + title + "','" + artist_real_id + "','" + href + "','" + image + "');";
                 
                 int kq_exsql = stm.executeUpdate(sql);
                 
@@ -129,5 +166,30 @@ public class them extends HttpServlet {
             {
                 response.getWriter().println("Error: " + e);
             }          
+    }
+    
+    
+    private String getUniqueFileName(String fileName, String directoryPath) {
+        String baseName = fileName;
+        String extension = "";
+
+        // Split file name into base name and extension
+        int dotIndex = fileName.lastIndexOf('.');
+        if (dotIndex > 0) {
+            baseName = fileName.substring(0, dotIndex);
+            extension = fileName.substring(dotIndex);
+        }
+
+        // Check for duplicates and generate a unique name
+        File dir = new File(directoryPath);
+        File file = new File(dir, fileName);
+        int counter = 1;
+        while (file.exists()) {
+            fileName = baseName + "(" + counter + ")" + extension;
+            file = new File(dir, fileName);
+            counter++;
+        }
+
+        return fileName;
     }
 }

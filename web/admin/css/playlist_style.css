@@ -1,20 +1,226 @@
-#title_page
+#title_page, #playlist_name
 {
-    margin-left: 40%;
+    text-align: center;
 }
 
-body 
+body
 {
     margin: 0;
     font-family: "Times New Roman", Times, serif;
 }
 
-table, th, td 
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo and Website Name */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav a {
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+
+
+    margin-left: -5px;
+}
+
+.nav a:hover {
+    background-color: #555;
+}
+
+/* User Section */
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user span {
+    font-size: 16px;
+}
+
+
+
+
+
+table, th, td
 {
-  border: 1px solid black;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 th
 {
     background-color: blue;
     color: white;
+}
+body
+{
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#two_table_container
+{
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Căn khoảng cách giữa hai bảng */
+    gap: 20px; /* Khoảng cách giữa hai bảng */
+}
+
+#table_container_playlist {
+    flex: 1; /* Chiếm 1 phần không gian */
+    max-width: 45%; /* Chiều rộng tối đa */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Phong cách bảng bên phải */
+#table_container {
+    flex: 1; /* Chiếm 1 phần không gian */
+    max-width: 45%; /* Chiều rộng tối đa */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#top_table_playlist
+{
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+#top_table
+{
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+#add_playlist
+{
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+#select-search
+{
+    margin-left: 20%;
+}
+#page-title
+{
+    text-align: center;
+
+}
+
+
+
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: 1px solid #494a4f;
+    border-radius: 1px;
+    border: none;
+}
+
+.hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+
+
+
+.pagination_song {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination_song button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: 1px solid #494a4f;
+    border-radius: 3px;
+    border: none;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.hidden_song {
+    display: none;
+}
+
+.pagination_song button.active {
+    background-color: #007bff; /* Màu nền khi nút đang được chọn */
+    color: white; /* Màu chữ của nút được chọn */
+    border: none; /* Loại bỏ viền */
+}
+
+
+
+
+
+
+#playlist_song_table
+{
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+#playlist_song_table td, #playlist_song_table th {
+    border: none; /* Remove borders from table cells */
 }

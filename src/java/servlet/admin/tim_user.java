@@ -4,22 +4,21 @@ package servlet.admin;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
+
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import DAO.Bang;
-import DAO.Bang_Playlist;
-import DAO.Bang_Playlist_song;
+import DAO.Bang_user;
 import java.sql.*;
-import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.http.HttpSession;
 
 /**
  *
  * @author nguye
  */
-public class LoadData_Playlist extends HttpServlet {
+public class tim_user extends HttpServlet {
 
     static final String jdbc_driver = "com.mysql.jdbc.Driver";
     static final String db_url = "jdbc:mysql://localhost/musicproject";
@@ -27,78 +26,52 @@ public class LoadData_Playlist extends HttpServlet {
     static final String db_pw = "";
     Connection conn = null;
     Statement stm = null;
-    Statement stm_2 = null;
-    Statement stm_3 = null;
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
+        response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
         try
             {
                 Class.forName(jdbc_driver);
                 conn = DriverManager.getConnection(db_url,db_user,db_pw);
                 stm = conn.createStatement();
-                stm_2 = conn.createStatement();
-                stm_3 = conn.createStatement();
-                String sql_playlist_song = "SELECT ps.playlist_id, s.song_id, s.title FROM playlist_songs as ps INNER join songs as s where ps.song_id = s.song_id and s.song_id = 1;";                
-                String sql_playlist = "select * from playlists";
-                String sql_song = "select * from songs";
-                ResultSet rs = stm.executeQuery(sql_playlist);
-                ResultSet rs_2 = stm_2.executeQuery(sql_song);
-                ResultSet rs_3 = stm_3.executeQuery(sql_playlist_song);
                 
-                Bang_Playlist kq = new Bang_Playlist();
-                Bang kq_2 = new Bang();
-                Bang_Playlist_song playlist_song = new Bang_Playlist_song();
+                String tim_w = request.getParameter("tim_w");
+                String tim_v = request.getParameter("tim_v");
+                   
+                String sql = "select * from users where " + tim_w + " like '%" + tim_v + "%' ;";
+                
+                PreparedStatement pstmt = conn.prepareStatement(sql);
+                               
+                ResultSet rs = pstmt.executeQuery(sql);
+                
+                Bang_user kq = new Bang_user();          
                 while(rs.next())
                 {
-                    String playlist_id = rs.getString("playlist_id");
-                    kq.playlist_id.add(playlist_id);
-                    String name = rs.getString("name");
-                    kq.name.add(name);
                     String user_id = rs.getString("user_id");
                     kq.user_id.add(user_id);
-                }
-                while(rs_2.next())
-                {
-                    String song_id = rs_2.getString("song_id");
-                    kq_2.song_id.add(song_id);
-                    String title = rs_2.getString("title");
-                    kq_2.title.add(title);
-                }      
-                while(rs_3.next())
-                {
-               //     String playlist_song_id = rs.getString("playlist_song_id");
-                //    playlist_song.playlist_song_id.add(playlist_song_id);
-                    String playlist_id = rs_3.getString("playlist_id");
-                    playlist_song.playlist_id.add(playlist_id);
-                    String song_id = rs_3.getString("song_id");
-                    playlist_song.song_id.add(song_id);
-                    String title = rs_3.getString("title");
-                    playlist_song.title.add(title);
-                } 
-                
-                
-                
-                
+                    String username = rs.getString("username");
+                    kq.username.add(username);
+                    String password = rs.getString("password");
+                    kq.password.add(password);
+                    String email = rs.getString("email");
+                    kq.email.add(email);
+                }               
                 rs.close();
-                rs_2.close();
-                rs_3.close();
                 stm.close();
-                stm_2.close();
-                stm_3.close();
                 conn.close();
-                                
-                 request.setAttribute("kq", kq);
-                 request.setAttribute("kq_2", kq_2);
-                 request.setAttribute("playlist_song", playlist_song);
-                 RequestDispatcher dispatcher = request.getRequestDispatcher("./playlist.jsp");
-                 dispatcher.forward(request, response);
+                             
+                HttpSession ss = request.getSession(true);
+                ss.setAttribute("kq", kq);
+                response.sendRedirect("./admin_users.jsp");
             }
             catch(Exception e)
             {
                 response.getWriter().println("Error: " + e);
-            } 
+            }           
+        
         
     }
 

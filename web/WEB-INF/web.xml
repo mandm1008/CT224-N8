@@ -96,6 +96,42 @@
         <servlet-name>DeletePlaylistServlet</servlet-name>
         <servlet-class>servlet.DeletePlaylistServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>tim_user</servlet-name>
+        <servlet-class>servlet.admin.tim_user</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Reload_Playlist</servlet-name>
+        <servlet-class>servlet.admin.Reload_Playlist</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Delete_Song_Playlist</servlet-name>
+        <servlet-class>servlet.admin.Delete_Song_Playlist</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadData_Playlist_Song</servlet-name>
+        <servlet-class>servlet.admin.LoadData_Playlist_Song</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Check_And_Add</servlet-name>
+        <servlet-class>servlet.admin.Check_And_Add</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>xoa_playlist</servlet-name>
+        <servlet-class>servlet.admin.xoa_playlist</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sua_playlist</servlet-name>
+        <servlet-class>servlet.admin.sua_playlist</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>playlist_add</servlet-name>
+        <servlet-class>servlet.admin.playlist_add</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Playlist_Song</servlet-name>
+        <servlet-class>servlet.admin.Playlist_Song</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SignupSevlet</servlet-name>
         <url-pattern>/api/signup</url-pattern>
@@ -191,5 +227,41 @@
     <servlet-mapping>
         <servlet-name>DeletePlaylistServlet</servlet-name>
         <url-pattern>/DeletePlaylistServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>tim_user</servlet-name>
+        <url-pattern>/admin/tim_user</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Reload_Playlist</servlet-name>
+        <url-pattern>/admin/Reload_Playlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Delete_Song_Playlist</servlet-name>
+        <url-pattern>/admin/Delete_Song_Playlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadData_Playlist_Song</servlet-name>
+        <url-pattern>/admin/LoadData_Playlist_Song</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Check_And_Add</servlet-name>
+        <url-pattern>/admin/Check_And_Add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>xoa_playlist</servlet-name>
+        <url-pattern>/admin/xoa_playlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sua_playlist</servlet-name>
+        <url-pattern>/admin/sua_playlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>playlist_add</servlet-name>
+        <url-pattern>/admin/playlist_add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Playlist_Song</servlet-name>
+        <url-pattern>/admin/Playlist_Song</url-pattern>
     </servlet-mapping>
 </web-app>

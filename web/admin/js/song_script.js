@@ -1,4 +1,6 @@
-                                        //Thêm Data từ bảng vào Form Thêm
+
+
+//Thêm Data từ bảng vào Form Thêm
 function them_show()
 {
     document.them.style.display = "block";
@@ -15,6 +17,7 @@ function them_show()
     them_hide.style.display = "block";
     var form = document.getElementById("them");
     form.action = "./them";
+    document.getElementById("form_title").innerText = "THÊM BÀI HÁT";
 }
 
                                             //Giấu Form Thêm
@@ -84,7 +87,7 @@ function sua()
     form_change_action.action = "./sua";
     document.them.old_href.value = href;
     document.them.old_img.value = image;
-    
+    document.getElementById("form_title").innerText = "SỬA BÀI HÁT";
 
 }
 
@@ -167,4 +170,55 @@ function reload()
 {
         window.location.href = 'LoadData';  // Redirect to the servlet
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const content = document.querySelector('.content'); 
+  const itemsPerPage = 5;
+  let currentPage = 0;
+  const items = Array.from(content.getElementsByTagName('tr')).slice(1);
+
+function showPage(page) {
+  const startIndex = page * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  items.forEach((item, index) => {
+    item.classList.toggle('hidden', index < startIndex || index >= endIndex);
+  });
+  updateActiveButtonStates();
+}
+
+function createPageButtons() {
+  const totalPages = Math.ceil(items.length / itemsPerPage);
+  const paginationContainer = document.createElement('div');
+  const paginationDiv = document.body.appendChild(paginationContainer);
+  paginationContainer.classList.add('pagination');
+
+  // Add page buttons
+  for (let i = 0; i < totalPages; i++) {
+    const pageButton = document.createElement('button');
+    pageButton.textContent = i + 1;
+    pageButton.addEventListener('click', () => {
+      currentPage = i;
+      showPage(currentPage);
+      updateActiveButtonStates();
+    });
+
+      content.appendChild(paginationContainer);
+      paginationDiv.appendChild(pageButton);
+    }
+}
+
+function updateActiveButtonStates() {
+  const pageButtons = document.querySelectorAll('.pagination button');
+  pageButtons.forEach((button, index) => {
+    if (index === currentPage) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+}
+
+  createPageButtons(); // Call this function to create the page buttons initially
+  showPage(currentPage);
+});
 
