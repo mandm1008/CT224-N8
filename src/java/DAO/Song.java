@@ -45,4 +45,8 @@ public class Song {
         this.image = s.getImage();
         this.view = s.getView();
     }
+
+    public int getSongId() {
+        return songId;
+    }
 }

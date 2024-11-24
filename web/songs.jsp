@@ -4,6 +4,7 @@
     Author     : ASUS
 --%>
 
+<%@page import="db.PlaylistModel"%>
 <%@page import="java.util.HashMap"%>
 <%@page import="com.google.gson.GsonBuilder"%>
 <%@page import="com.google.gson.Gson"%>
@@ -37,6 +38,7 @@
         UserMusic um = new UserMusic(user.userId);
         userSongs = um.findByUserId();
     }
+    LinkedList<PlaylistModel> newAdminPlaylist = (new PlaylistModel()).getAdminPlaylist();
 
     HashMap<String, Object> data = new HashMap<>();
     LinkedList<Song> list = new LinkedList<>();
@@ -107,9 +109,32 @@
             </div>
         </div>
 
+
+        <% if (newAdminPlaylist.size() > 0) {%>
         <div class="home-element">
-            <h2>Danh sách phát</h2>
+            <h2>Danh sách phát mới cập nhật</h2>
+
+            <div class="playlist-new">
+                <div class="playlist-new-box">
+                    <%
+                        for (int i = 0; i < newAdminPlaylist.size(); i++) {
+                            PlaylistModel playlist = newAdminPlaylist.get(i);
+
+                    %>
+                    <div class="playlist-new-element">
+                        <span>
+                            <%=playlist.getName()%>
+                        </span>
+
+                        <button class="music-menu--icon" onclick="window.location = '<%=contextPath%>/RunPlaylist?id=<%=playlist.getPlaylistId()%>'">
+                            <img src="<%=contextPath%>/images/icons/play-solid.png" alt="Play">
+                        </button>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
         </div>
+        <% } %>
 
         <div class="home-element">
             <h2>Đề cử</h2>

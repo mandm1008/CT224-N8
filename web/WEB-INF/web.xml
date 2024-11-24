@@ -84,6 +84,18 @@
         <servlet-name>tim_playlist</servlet-name>
         <servlet-class>servlet.admin.tim_playlist</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RunPlaylist</servlet-name>
+        <servlet-class>servlet.RunPlaylist</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddSongToPlaylistServlet</servlet-name>
+        <servlet-class>servlet.AddSongToPlaylistServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeletePlaylistServlet</servlet-name>
+        <servlet-class>servlet.DeletePlaylistServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SignupSevlet</servlet-name>
         <url-pattern>/api/signup</url-pattern>
@@ -167,5 +179,17 @@
     <servlet-mapping>
         <servlet-name>tim_playlist</servlet-name>
         <url-pattern>/admin/tim_playlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RunPlaylist</servlet-name>
+        <url-pattern>/RunPlaylist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddSongToPlaylistServlet</servlet-name>
+        <url-pattern>/AddSongToPlaylistServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeletePlaylistServlet</servlet-name>
+        <url-pattern>/DeletePlaylistServlet</url-pattern>
     </servlet-mapping>
 </web-app>

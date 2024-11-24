@@ -9,10 +9,28 @@
 <%@page import="java.util.HashMap"%>
 <%@page import="java.util.LinkedList"%>
 <%@page import="db.SongModel" %>
+<%@page import="db.PlaylistSongModel" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
-    LinkedList<SongModel> list = SongModel.getNewSongs(9);
+    // check session playlist
+    LinkedList<SongModel> list = new LinkedList<>();
+    String playlistIdStrSession = (String) session.getAttribute("playlistId");
+    int playlistIdSession = -1;
+    
+    if (playlistIdStrSession != null) {
+        try {
+            playlistIdSession = Integer.parseInt(playlistIdStrSession);
+        } catch (Exception e) {
+        }
+    }
+    
+    if (playlistIdSession > 0) {
+        list = (new PlaylistSongModel()).getSongsByPlaylistId(playlistIdSession);
+    }
+    
+    // default
+    if (list.size() <= 0) list = SongModel.getNewSongs(9);
     HashMap<String, Object> data = new HashMap<>();
 
     data.put("songs", list);

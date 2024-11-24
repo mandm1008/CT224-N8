@@ -8,6 +8,7 @@ import com.google.gson.Gson;
 import java.util.HashMap;
 import java.util.LinkedList;
 import db.SongModel;
+import db.PlaylistSongModel;
 
 public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -56,8 +57,26 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
 
-    LinkedList<SongModel> list = SongModel.getNewSongs(9);
+    // check session playlist
+    LinkedList<SongModel> list = new LinkedList<>();
+    String playlistIdStrSession = (String) session.getAttribute("playlistId");
+    int playlistIdSession = -1;
+    
+    if (playlistIdStrSession != null) {
+        try {
+            playlistIdSession = Integer.parseInt(playlistIdStrSession);
+        } catch (Exception e) {
+        }
+    }
+    
+    if (playlistIdSession > 0) {
+        list = (new PlaylistSongModel()).getSongsByPlaylistId(playlistIdSession);
+    }
+    
+    // default
+    if (list.size() <= 0) list = SongModel.getNewSongs(9);
     HashMap<String, Object> data = new HashMap<>();
 
     data.put("songs", list);

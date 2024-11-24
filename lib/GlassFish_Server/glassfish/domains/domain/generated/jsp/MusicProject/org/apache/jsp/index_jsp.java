@@ -8,6 +8,7 @@ import db.SongModel;
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
 import db.UserMusic;
+import db.PlaylistModel;
 import DAO.User;
 import DAO.Song;
 
@@ -60,6 +61,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
  String contextPath = request.getContextPath();
       out.write('\n');
 
@@ -70,6 +72,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         UserMusic um = new UserMusic(user.userId);
         userSongs = um.findByUserId();
     }
+
+    LinkedList<PlaylistModel> newAdminPlaylist = (new PlaylistModel()).getAdminPlaylist();
 
     Gson gsonHome = new GsonBuilder().setLenient().create();
 
@@ -253,7 +257,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\" yt-data=\"");
       out.print((song.href.contains("youtube") ? song.href : ""));
       out.write("\"  >\n");
-      out.write("                        \n");
+      out.write("\n");
       out.write("                            <div class=\"music-top\">\n");
       out.write("                                <h2>");
       out.print(i + 1);
@@ -298,19 +302,53 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\n");
       out.write("\n");
       out.write("            ");
-  if (userSongs != null && userSongs.size() > 0) {
+ if (newAdminPlaylist.size() > 0) {
+      out.write("\n");
+      out.write("            <div class=\"home-element\">\n");
+      out.write("                <h2>Danh sách phát mới cập nhật</h2>\n");
+      out.write("\n");
+      out.write("                <div class=\"playlist-new\">\n");
+      out.write("                    <div class=\"playlist-new-box\">\n");
+      out.write("                        ");
+
+                            for (int i = 0; i < newAdminPlaylist.size(); i++) {
+                                PlaylistModel playlist = newAdminPlaylist.get(i);
+
+                        
+      out.write("\n");
+      out.write("                        <div class=\"playlist-new-element\">\n");
+      out.write("                            <span>\n");
+      out.write("                                ");
+      out.print(playlist.getName());
+      out.write("\n");
+      out.write("                            </span>\n");
+      out.write("\n");
+      out.write("                            <button class=\"music-menu--icon\" onclick=\"window.location = '");
+      out.print(contextPath);
+      out.write("/RunPlaylist?id=");
+      out.print(playlist.getPlaylistId());
+      out.write("'\">\n");
+      out.write("                                <img src=\"");
+      out.print(contextPath);
+      out.write("/images/icons/play-solid.png\" alt=\"Play\">\n");
+      out.write("                            </button>\n");
+      out.write("                        </div>\n");
+      out.write("                        ");
+ } 
+      out.write("\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("            ");
+ } 
+      out.write("\n");
+      out.write("\n");
+      out.write("            ");
+  if (user != null && user.userId > 0) {
       out.write("\n");
       out.write("            <div class=\"playlist-form\">\n");
-      out.write("                <h2>Tạo Danh Sách Phát</h2>\n");
-      out.write("                <form action=\"AddToPlaylistServlet\" method=\"POST\">\n");
-      out.write("                    <label for=\"playlistName\">Tên danh sách phát:</label>\n");
-      out.write("                    <input type=\"text\" id=\"playlistName\" name=\"playlistName\" required><!-- comment -->\n");
-      out.write("                    <br><!-- comment -->\n");
-      out.write("                    <input type=\"hidden\" name=\"userId\" value=\"");
-      out.print( session.getAttribute("userId"));
-      out.write("\"><!-- comment -->\n");
-      out.write("                    <button type=\"submit\">Tạo</button>\n");
-      out.write("                </form>\n");
+      out.write("                <h2>Danh Sách Nhạc của tui</h2>\n");
+      out.write("                <a href=\"playlist.jsp\" class=\"btn btn-primary\">Xem Danh Sách</a>\n");
       out.write("            </div>\n");
       out.write("            ");
  }
@@ -320,7 +358,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/WEB-INF/views/player.jsp", out, false);
       out.write("\n");
-      out.write("        \n");
+      out.write("\n");
       out.write("        <script defer>\n");
       out.write("            document.querySelectorAll(\".music-element-youtube\").forEach(element => {\n");
       out.write("                const href = element.getAttribute(\"yt-data\");\n");
@@ -339,7 +377,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            artistElement.innerText = data.channelTitle;\n");
       out.write("                            if (titleMenuElement !== null) {\n");
       out.write("                                titleMenuElement.innerText = data.title;\n");
-      out.write("                            } \n");
+      out.write("                            }\n");
       out.write("                        });\n");
       out.write("            });\n");
       out.write("        </script>\n");

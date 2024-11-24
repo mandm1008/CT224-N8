@@ -22,7 +22,7 @@ import java.nio.file.StandardCopyOption;
 
 @MultipartConfig
 public class them extends HttpServlet {
-
+    public static final String UPLOAD_PATH = "D://Workspace/NetBeans/MusicProject/web/uploads";
     static final String jdbc_driver = "com.mysql.jdbc.Driver";
     static final String db_url = "jdbc:mysql://localhost/musicproject";
     static final String db_user = "root";
@@ -68,8 +68,8 @@ public class them extends HttpServlet {
                     String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString(); // Lấy tên file
                     
                     // Đường dẫn thư mục lưu trữ tệp
-                    String rootPath = getServletContext().getRealPath("/");
-                    String uploadPath = rootPath + "/uploads/audio";
+                    String rootPath = UPLOAD_PATH;
+                    String uploadPath = rootPath + "/audio";
                     File uploadDir = new File(uploadPath);
                     
                     if (!uploadDir.exists()) {
@@ -93,8 +93,8 @@ public class them extends HttpServlet {
                     String fileName = Paths.get(filePart2.getSubmittedFileName()).getFileName().toString(); // Lấy tên file
                     
                     // Đường dẫn thư mục lưu trữ tệp
-                    String rootPath = getServletContext().getRealPath("/");
-                    String uploadPath = rootPath + "/uploads/images";
+                    String rootPath = UPLOAD_PATH;
+                    String uploadPath = rootPath + "/images";
                     File uploadDir = new File(uploadPath);
                     
                     if (!uploadDir.exists()) {

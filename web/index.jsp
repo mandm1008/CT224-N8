@@ -9,6 +9,7 @@
 <%@page import="com.google.gson.GsonBuilder"%>
 <%@page import="com.google.gson.Gson"%>
 <%@page import="db.UserMusic"%>
+<%@page import="db.PlaylistModel"%>
 <%@page import="DAO.User" %>
 <%@page import="DAO.Song" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -22,6 +23,8 @@
         UserMusic um = new UserMusic(user.userId);
         userSongs = um.findByUserId();
     }
+
+    LinkedList<PlaylistModel> newAdminPlaylist = (new PlaylistModel()).getAdminPlaylist();
 
     Gson gsonHome = new GsonBuilder().setLenient().create();
 %>
@@ -124,7 +127,7 @@
                         %>
 
                         <div class="<%=(song.href.contains("youtube") ? "music-element music-element-youtube slider-element" : "music-element slider-element")%>" yt-data="<%=(song.href.contains("youtube") ? song.href : "")%>"  >
-                        
+
                             <div class="music-top">
                                 <h2><%=i + 1%></h2>
                             </div>
@@ -148,22 +151,42 @@
                 </div>
             </div>
 
-            <%  if (userSongs != null && userSongs.size() > 0) {%>
+            <% if (newAdminPlaylist.size() > 0) {%>
+            <div class="home-element">
+                <h2>Danh sách phát mới cập nhật</h2>
+
+                <div class="playlist-new">
+                    <div class="playlist-new-box">
+                        <%
+                            for (int i = 0; i < newAdminPlaylist.size(); i++) {
+                                PlaylistModel playlist = newAdminPlaylist.get(i);
+
+                        %>
+                        <div class="playlist-new-element">
+                            <span>
+                                <%=playlist.getName()%>
+                            </span>
+
+                            <button class="music-menu--icon" onclick="window.location = '<%=contextPath%>/RunPlaylist?id=<%=playlist.getPlaylistId()%>'">
+                                <img src="<%=contextPath%>/images/icons/play-solid.png" alt="Play">
+                            </button>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
+            <%  if (user != null && user.userId > 0) {%>
             <div class="playlist-form">
-                <h2>Tạo Danh Sách Phát</h2>
-                <form action="AddToPlaylistServlet" method="POST">
-                    <label for="playlistName">Tên danh sách phát:</label>
-                    <input type="text" id="playlistName" name="playlistName" required><!-- comment -->
-                    <br><!-- comment -->
-                    <input type="hidden" name="userId" value="<%= session.getAttribute("userId")%>"><!-- comment -->
-                    <button type="submit">Tạo</button>
-                </form>
+                <h2>Danh Sách Nhạc của tui</h2>
+                <a href="playlist.jsp" class="btn btn-primary">Xem Danh Sách</a>
             </div>
             <% }%>
         </div>
 
         <jsp:include page="/WEB-INF/views/player.jsp" />
-        
+
         <script defer>
             document.querySelectorAll(".music-element-youtube").forEach(element => {
                 const href = element.getAttribute("yt-data");
@@ -182,7 +205,7 @@
                             artistElement.innerText = data.channelTitle;
                             if (titleMenuElement !== null) {
                                 titleMenuElement.innerText = data.title;
-                            } 
+                            }
                         });
             });
         </script>
